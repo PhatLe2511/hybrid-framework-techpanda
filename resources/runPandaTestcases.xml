@@ -2,7 +2,9 @@
 <suite parallel="false" name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.techpanda.account.Account_01_register"/>
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_I"/>
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_II"/>
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_III"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

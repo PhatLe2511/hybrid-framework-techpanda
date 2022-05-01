@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-01T04:10:15Z" name="Suite" finished-at="2022-05-01T04:11:07Z" duration-ms="52458">
+    <groups>
+    </groups>
+    <test started-at="2022-05-01T04:10:15Z" name="Test" finished-at="2022-05-01T04:11:07Z" duration-ms="52458">
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_I">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:15Z" name="beforeClass" finished-at="2022-05-01T04:10:17Z" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:17Z" name="BeforeMethod" finished-at="2022-05-01T04:10:21Z" duration-ms="4026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_01_Login_Empty_Data()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:21Z" name="TC_01_Login_Empty_Data" finished-at="2022-05-01T04:10:23Z" duration-ms="2308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_Empty_Data -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:23Z" name="BeforeMethod" finished-at="2022-05-01T04:10:24Z" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_02_Invalid_Email()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:24Z" name="TC_02_Invalid_Email" finished-at="2022-05-01T04:10:27Z" duration-ms="2605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Invalid_Email -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:27Z" name="BeforeMethod" finished-at="2022-05-01T04:10:27Z" duration-ms="829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_03_Invalid_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:27Z" name="TC_03_Invalid_Password" finished-at="2022-05-01T04:10:29Z" duration-ms="1601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Invalid_Password -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:29Z" name="BeforeMethod" finished-at="2022-05-01T04:10:30Z" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_04_Incorrect_Email_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:30Z" name="TC_04_Incorrect_Email_Password" finished-at="2022-05-01T04:10:33Z" duration-ms="3338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Incorrect_Email_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_I@1757cd72]" started-at="2022-05-01T04:10:33Z" name="afterClass" finished-at="2022-05-01T04:10:33Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.techpanda.account.Level_2_Apply_BasePage_Part_I -->
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_III">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:10:51Z" name="beforeClass" finished-at="2022-05-01T04:10:53Z" duration-ms="1227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:10:53Z" name="BeforeMethod" finished-at="2022-05-01T04:10:57Z" duration-ms="4577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_01_Login_Empty_Data()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:10:57Z" name="TC_01_Login_Empty_Data" finished-at="2022-05-01T04:10:59Z" duration-ms="1912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_Empty_Data -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:10:59Z" name="BeforeMethod" finished-at="2022-05-01T04:11:00Z" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_02_Invalid_Email()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:00Z" name="TC_02_Invalid_Email" finished-at="2022-05-01T04:11:02Z" duration-ms="1947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Invalid_Email -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:02Z" name="BeforeMethod" finished-at="2022-05-01T04:11:02Z" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_03_Invalid_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:02Z" name="TC_03_Invalid_Password" finished-at="2022-05-01T04:11:04Z" duration-ms="1565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Invalid_Password -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:04Z" name="BeforeMethod" finished-at="2022-05-01T04:11:04Z" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_04_Incorrect_Email_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:04Z" name="TC_04_Incorrect_Email_Password" finished-at="2022-05-01T04:11:07Z" duration-ms="2756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Incorrect_Email_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_III@49e5f737]" started-at="2022-05-01T04:11:07Z" name="afterClass" finished-at="2022-05-01T04:11:07Z" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.techpanda.account.Level_2_Apply_BasePage_Part_III -->
+      <class name="com.techpanda.account.Level_2_Apply_BasePage_Part_II">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:33Z" name="beforeClass" finished-at="2022-05-01T04:10:34Z" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:34Z" name="BeforeMethod" finished-at="2022-05-01T04:10:40Z" duration-ms="6013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_01_Login_Empty_Data()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:40Z" name="TC_01_Login_Empty_Data" finished-at="2022-05-01T04:10:43Z" duration-ms="2133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_Empty_Data -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:43Z" name="BeforeMethod" finished-at="2022-05-01T04:10:43Z" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_02_Invalid_Email()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:43Z" name="TC_02_Invalid_Email" finished-at="2022-05-01T04:10:45Z" duration-ms="1967" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Invalid_Email -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:45Z" name="BeforeMethod" finished-at="2022-05-01T04:10:46Z" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_03_Invalid_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:46Z" name="TC_03_Invalid_Password" finished-at="2022-05-01T04:10:48Z" duration-ms="1830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Invalid_Password -->
+        <test-method is-config="true" signature="BeforeMethod()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:48Z" name="BeforeMethod" finished-at="2022-05-01T04:10:48Z" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="TC_04_Incorrect_Email_Password()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:48Z" name="TC_04_Incorrect_Email_Password" finished-at="2022-05-01T04:10:51Z" duration-ms="2919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Incorrect_Email_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_2_Apply_BasePage_Part_II@445b295b]" started-at="2022-05-01T04:10:51Z" name="afterClass" finished-at="2022-05-01T04:10:51Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.techpanda.account.Level_2_Apply_BasePage_Part_II -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
