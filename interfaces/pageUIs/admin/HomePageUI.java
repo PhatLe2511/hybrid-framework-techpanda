@@ -1,5 +1,6 @@
-package pageUIs;
+package pageUIs.admin;
 
 public class HomePageUI {
-
+	
+	
 }
