@@ -60,11 +60,4 @@ public class LoginPageObject extends BasePage{
 		waitForElementVisible(driver, LoginPageUI.CREATE_NEW_ACCOUNT_BUTTON);
 		clickToElement(driver, LoginPageUI.CREATE_NEW_ACCOUNT_BUTTON);
 	}
-	
-	
-
-
-
-
-
 }

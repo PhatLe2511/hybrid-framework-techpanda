@@ -1,9 +1,11 @@
-/java_basic/
+/commons/
+/factoryBrowser/
+/factoryEnvironment/
 /javaBasic/
 /javaOOP/
-/javaDesignPattern/
-/javaCollection/
-/com/
-/homepage/
-/pageUIs/
 /pageObject/
+/pageUIs/
+/reportConfig/
+/retryConfig/
+/utilities/
+/com/

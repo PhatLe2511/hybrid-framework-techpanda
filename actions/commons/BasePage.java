@@ -102,7 +102,7 @@ public class BasePage {
 	}
 	
 	public void sendKeysToAlert(WebDriver driver, String valuetoSendKey) {
-		waitForAlertPresence(driver) .sendKeys(valuetoSendKey); 
+		waitForAlertPresence(driver).sendKeys(valuetoSendKey); 
 	}
  	
 	public String getAlertText(WebDriver driver) {
