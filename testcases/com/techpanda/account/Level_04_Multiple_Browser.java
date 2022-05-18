@@ -1,10 +1,8 @@
 package com.techpanda.account;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -34,7 +32,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
   @BeforeClass
   public void beforeClass(String browserName) {
 	  driver = getWebBrowser(browserName);
-	
+	  driver.get("http://live.techpanda.org/");
 	  homePage = new HomePageObject(driver);
   }
   
@@ -42,7 +40,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
   
   	@Test
   	public void TC_01_Login_Empty_Data() {
-  		
+  	
   		homePage.clickToMyAccountLink();
   		
   		loginPage = new LoginPageObject(driver);

@@ -3,40 +3,34 @@ package commons;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
-	
-	public WebDriver getWebBrowser(String browserName) {
-		
-		switch (browserName) {
-		case "firefox":
-			System.setProperty("webdriver.gecko.driver", projectPath + "/BrowserDrivers/geckodriver");
-			driver = new FirefoxDriver();
+	 String projectPath = System.getProperty("user.dir");
+	 	WebDriver driver;
+	 
+	 public WebDriver getWebBrowser(String browserName) {
+		 BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
+		switch (browserList) {
+		case FIREFOX:
+			driver = WebDriverManager.firefoxdriver().create();
 			break;
-		case "chrome":
-			System.setProperty("webdriver.chrome.driver", projectPath + "/BrowserDrivers/chromedriver");
-			driver = new ChromeDriver();
+		case CHROME:
+			driver = WebDriverManager.chromedriver().create();
 			break;
-		case "edge":
-			System.setProperty("webdriver.edge.driver", projectPath + "/BrowserDrivers/msedgedriver");
-			driver = new EdgeDriver();
+		case EDGE:
+			driver = WebDriverManager.edgedriver().create();
 			break;
-
 		default:
-			throw new RuntimeException("Browser name is invalid");
+			throw new RuntimeException("Browser name is not valid");
 		}
-		
-
-		driver.manage().window().maximize();  
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://live.techpanda.org/");
+		driver.manage().window().maximize();
 		
 		return driver;
-	}
+		
+	 }
 	
-}
+	}	
+
