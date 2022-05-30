@@ -1,11 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="1" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-20T15:54:16Z" name="Default suite" finished-at="2022-05-20T15:54:16Z" duration-ms="3">
+  <suite started-at="2022-05-30T16:33:35Z" name="Tech panda" finished-at="2022-05-30T16:34:16Z" duration-ms="40723">
     <groups>
     </groups>
-    <test started-at="2022-05-20T15:54:16Z" name="Default test" finished-at="2022-05-20T15:54:16Z" duration-ms="3">
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    <test started-at="2022-05-30T16:33:35Z" name="Run on Chrome" finished-at="2022-05-30T16:34:16Z" duration-ms="40723">
+      <class name="com.techpanda.account.Level_05_Page_Generator">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:35Z" name="beforeClass" finished-at="2022-05-30T16:33:41Z" duration-ms="5991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_01_Login_Empty_Data()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:41Z" name="TC_01_Login_Empty_Data" finished-at="2022-05-30T16:33:43Z" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Login_Empty_Data -->
+        <test-method signature="TC_02_Login_With_Invalid_Email()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:43Z" name="TC_02_Login_With_Invalid_Email" finished-at="2022-05-30T16:33:45Z" duration-ms="2240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Login_With_Invalid_Email -->
+        <test-method signature="TC_03_Login_With_Invalid_Password()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:45Z" name="TC_03_Login_With_Invalid_Password" finished-at="2022-05-30T16:33:47Z" duration-ms="1622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Login_With_Invalid_Password -->
+        <test-method signature="TC_04_Create_New_Account()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:47Z" name="TC_04_Create_New_Account" finished-at="2022-05-30T16:33:58Z" duration-ms="11093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Create_New_Account -->
+        <test-method signature="TC_05_Login_With_Incorrect_Email()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:33:58Z" name="TC_05_Login_With_Incorrect_Email" finished-at="2022-05-30T16:34:01Z" duration-ms="3154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Login_With_Incorrect_Email -->
+        <test-method signature="TC_06_Login_With_Incorrect_Password()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:34:01Z" name="TC_06_Login_With_Incorrect_Password" finished-at="2022-05-30T16:34:04Z" duration-ms="3179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_Login_With_Incorrect_Password -->
+        <test-method signature="TC_07_Login_Valid_Password()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:34:04Z" name="TC_07_Login_Valid_Password" finished-at="2022-05-30T16:34:09Z" duration-ms="4242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_07_Login_Valid_Password -->
+        <test-method signature="TC_08_Edit_Information()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:34:09Z" name="TC_08_Edit_Information" finished-at="2022-05-30T16:34:16Z" duration-ms="6893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_Edit_Information -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_05_Page_Generator@707194ba]" started-at="2022-05-30T16:34:16Z" name="afterClass" finished-at="2022-05-30T16:34:16Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.techpanda.account.Level_05_Page_Generator -->
+    </test> <!-- Run on Chrome -->
+  </suite> <!-- Tech panda -->
 </testng-results>

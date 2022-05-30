@@ -13,4 +13,9 @@ public class DashboardPageUI {
 	public static final String LOGOUT_BUTTON = "//div[@class='skip-content skip-active']//a[@title='Log Out']";
 	
 	public static final String CONTACT_INFORMATION = "//h3[text()='Contact Information']/parent::div/following-sibling::*/p";
+	
+	public static final String ACCOUNT_INFORMATION = "//a[text()='Account Information']";
+	
+	public static final String EDIT_SUCCESSFUL_MESSAGE = "//li[@class='success-msg']//span";
+	
 }

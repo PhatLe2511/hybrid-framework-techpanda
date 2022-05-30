@@ -1,58 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Tech panda]">
-  <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="Browser" value="firefox"/>
-    <classes>
-      <class name="com.techpanda.account.Level_04_Multiple_Browser">
-        <methods>
-          <include name="TC_03_Login_With_Invalid_Password"/>
-          <include name="TC_06_Login_With_Incorrect_Password"/>
-          <include name="TC_04_Create_New_Account"/>
-          <include name="beforeClass"/>
-          <include name="TC_01_Login_Empty_Data"/>
-          <include name="TC_02_Login_With_Invalid_Email"/>
-          <include name="TC_05_Login_With_Incorrect_Email"/>
-          <include name="TC_07_Login_Valid_Password"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.techpanda.account.Level_04_Multiple_Browser -->
-    </classes>
-  </test> <!-- Run on Firefox(failed) -->
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.techpanda.account.Level_04_Multiple_Browser">
+      <class name="com.techpanda.account.Level_05_Page_Generator">
         <methods>
-          <include name="TC_03_Login_With_Invalid_Password"/>
-          <include name="TC_06_Login_With_Incorrect_Password"/>
-          <include name="TC_04_Create_New_Account"/>
-          <include name="beforeClass"/>
-          <include name="TC_01_Login_Empty_Data"/>
-          <include name="TC_02_Login_With_Invalid_Email"/>
-          <include name="TC_05_Login_With_Incorrect_Email"/>
-          <include name="TC_07_Login_Valid_Password"/>
           <include name="afterClass"/>
+          <include name="TC_08_Edit_Information"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.techpanda.account.Level_04_Multiple_Browser -->
+      </class> <!-- com.techpanda.account.Level_05_Page_Generator -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
-  <test thread-count="5" name="Run on Edge(failed)">
-    <parameter name="Browser" value="edge"/>
-    <classes>
-      <class name="com.techpanda.account.Level_04_Multiple_Browser">
-        <methods>
-          <include name="TC_03_Login_With_Invalid_Password"/>
-          <include name="TC_06_Login_With_Incorrect_Password"/>
-          <include name="TC_04_Create_New_Account"/>
-          <include name="beforeClass"/>
-          <include name="TC_01_Login_Empty_Data"/>
-          <include name="TC_02_Login_With_Invalid_Email"/>
-          <include name="TC_05_Login_With_Incorrect_Email"/>
-          <include name="TC_07_Login_Valid_Password"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.techpanda.account.Level_04_Multiple_Browser -->
-    </classes>
-  </test> <!-- Run on Edge(failed) -->
 </suite> <!-- Failed suite [Tech panda] -->

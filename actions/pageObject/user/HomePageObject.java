@@ -11,9 +11,10 @@ public class HomePageObject extends BasePage{
 	public HomePageObject(WebDriver driver) {
 		this.driver = driver;
 	}
-	public void clickToMyAccountLink() {
+	public LoginPageObject clickToMyAccountLink() {
 		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return PageGeneratorManager.getLoginPageObject(driver);
 	}
 	
 	public boolean homePageImage() {

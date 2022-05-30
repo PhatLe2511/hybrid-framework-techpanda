@@ -26,8 +26,9 @@ public class LoginPageObject extends BasePage{
 		
 	}
 
-	public void clickToLoginButton() {
-		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);	
+	public DashboardPageObject clickToLoginButton() {
+		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		return PageGeneratorManager.getDashboardPageObject(driver);
 	}
 
 	public String getRequiredMailErrorMessage() {
@@ -56,8 +57,9 @@ public class LoginPageObject extends BasePage{
 		return getElementText(driver, LoginPageUI.INCORRECT_USERNAME_PASSWORD_ERROR_MESSAGE);
 	}
 
-	public void clickOnCreateNewAccountButton() {
+	public CreateNewAccountPageObject clickOnCreateNewAccountButton() {
 		waitForElementVisible(driver, LoginPageUI.CREATE_NEW_ACCOUNT_BUTTON);
 		clickToElement(driver, LoginPageUI.CREATE_NEW_ACCOUNT_BUTTON);
+		return PageGeneratorManager.getCreateNewAccountPageObject(driver);
 	}
 }
