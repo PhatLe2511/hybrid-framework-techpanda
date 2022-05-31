@@ -20,4 +20,5 @@ public class LoginPageUI {
 	
 	public static final String CREATE_NEW_ACCOUNT_BUTTON = "//div[@class='col2-set']//div[@class='buttons-set']/a";
 	
+	
 }

@@ -42,5 +42,6 @@ public class CreateNewAccountPageObject extends BasePage {
 	public DashboardPageObject clickOnRegisterButton() {
 		clickToElement(driver, CreateNewAccountPageUI.REGISTER_BUTTON);
 		return PageGeneratorManager.getDashboardPageObject(driver);
+		
 	}
 }

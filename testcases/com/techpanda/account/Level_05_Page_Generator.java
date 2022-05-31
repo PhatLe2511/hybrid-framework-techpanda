@@ -168,7 +168,6 @@ public class Level_05_Page_Generator extends BaseTest{
   		Assert.assertEquals(dashboardPage.getEditSuccessMessage(), "The account information has been saved.");
   		
   	}
-  
 
   @AfterClass
   public void afterClass() {

@@ -28,5 +28,6 @@ public class AccountInformationPageObject extends BasePage{
 	public DashboardPageObject clickOnSaveButton() {
 		clickToElement(driver, AccountInformationPageUI.SAVE_BUTTON);
 		return PageGeneratorManager.getDashboardPageObject(driver);
+		
 	}
 }

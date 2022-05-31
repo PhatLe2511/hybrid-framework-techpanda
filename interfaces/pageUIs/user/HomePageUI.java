@@ -5,5 +5,4 @@ public class HomePageUI {
 	
 	public static final String HOME_PAGE_IMAGE = "//div[@class='page-title']//img";
 
-	
 }

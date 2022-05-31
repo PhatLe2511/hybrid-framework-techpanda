@@ -22,6 +22,5 @@ public class HomePageObject extends BasePage{
 		return isElementDisplayed(driver, HomePageUI.HOME_PAGE_IMAGE);
 	}
 
-
 }
 

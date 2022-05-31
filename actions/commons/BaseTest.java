@@ -36,6 +36,5 @@ public class BaseTest {
 			Random rand = new Random();
 			return rand.nextInt(999999);
 		}	
-	 	
 	}	
 

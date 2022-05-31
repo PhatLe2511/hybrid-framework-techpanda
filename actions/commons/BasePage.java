@@ -33,6 +33,7 @@ public class BasePage {
 		}
 	}
 
+	
 	public void getTabTitle(WebDriver driver, String expectedTitle) {
 		Set<String> allTabTitle = driver.getWindowHandles();
 		
