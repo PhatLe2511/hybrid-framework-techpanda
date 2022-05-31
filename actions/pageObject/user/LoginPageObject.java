@@ -62,4 +62,6 @@ public class LoginPageObject extends BasePage{
 		clickToElement(driver, LoginPageUI.CREATE_NEW_ACCOUNT_BUTTON);
 		return PageGeneratorManager.getCreateNewAccountPageObject(driver);
 	}
+	
+	
 }

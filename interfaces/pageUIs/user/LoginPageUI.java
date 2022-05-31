@@ -19,4 +19,5 @@ public class LoginPageUI {
 	public static final String INCORRECT_USERNAME_PASSWORD_ERROR_MESSAGE = "//li[@class='error-msg']//span";
 	
 	public static final String CREATE_NEW_ACCOUNT_BUTTON = "//div[@class='col2-set']//div[@class='buttons-set']/a";
+	
 }

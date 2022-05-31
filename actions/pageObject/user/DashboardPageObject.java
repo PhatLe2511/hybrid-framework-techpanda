@@ -50,4 +50,5 @@ public class DashboardPageObject extends BasePage{
 		return getElementText(driver, DashboardPageUI.EDIT_SUCCESSFUL_MESSAGE);
 	}
 
+	
 }

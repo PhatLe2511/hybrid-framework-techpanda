@@ -162,6 +162,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
   @AfterClass
   public void afterClass() {
 	   driver.quit();
+	   
   }
 
 }

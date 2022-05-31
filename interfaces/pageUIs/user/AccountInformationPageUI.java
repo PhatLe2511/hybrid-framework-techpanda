@@ -8,6 +8,5 @@ public class AccountInformationPageUI {
 	public static final String CURRENT_PASSWORD_TEXT_BOX = "//input[@id='current_password']";
 	
 	public static final String SAVE_BUTTON = "//button[@title='Save']";
-	
-	
+
 }

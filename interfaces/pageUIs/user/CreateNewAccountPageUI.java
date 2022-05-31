@@ -8,5 +8,4 @@ public class CreateNewAccountPageUI {
 	public static final String CONFIRM_PASSWORD_TEXTBOX = "//input[@id='confirmation']";
 	public static final String REGISTER_BUTTON = "//button[@title='Register']";
 	
-	
 }

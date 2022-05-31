@@ -21,6 +21,7 @@ public class HomePageObject extends BasePage{
 		waitForElementVisible(driver, HomePageUI.HOME_PAGE_IMAGE);
 		return isElementDisplayed(driver, HomePageUI.HOME_PAGE_IMAGE);
 	}
-		
-	}
+
+
+}
 

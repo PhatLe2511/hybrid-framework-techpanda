@@ -24,4 +24,7 @@ public class PageGeneratorManager {
 	public static AccountInformationPageObject getAccountInformationPageObject(WebDriver driver) {
 		return new AccountInformationPageObject(driver);
 	}
+	
+	
+	
 }

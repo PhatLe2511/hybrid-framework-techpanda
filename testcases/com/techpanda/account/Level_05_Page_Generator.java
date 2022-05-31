@@ -166,6 +166,7 @@ public class Level_05_Page_Generator extends BaseTest{
   		dashboardPage = accountInformationPage.clickOnSaveButton();
   		
   		Assert.assertEquals(dashboardPage.getEditSuccessMessage(), "The account information has been saved.");
+  		
   	}
   
 

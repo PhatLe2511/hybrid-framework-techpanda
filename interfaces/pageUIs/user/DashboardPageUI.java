@@ -18,4 +18,5 @@ public class DashboardPageUI {
 	
 	public static final String EDIT_SUCCESSFUL_MESSAGE = "//li[@class='success-msg']//span";
 	
+	
 }
