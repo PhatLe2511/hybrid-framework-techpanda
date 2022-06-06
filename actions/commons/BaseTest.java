@@ -35,6 +35,15 @@ public class BaseTest {
 	 	protected int getRandomNumber() {
 			Random rand = new Random();
 			return rand.nextInt(999999);
-		}	
+		}
+	 	
+	 	protected void sleepInSecond(long second) {
+	 		try {
+				Thread.sleep(second * 1000);;
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	 	}
 	}	
 

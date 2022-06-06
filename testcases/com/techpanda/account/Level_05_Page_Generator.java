@@ -158,7 +158,7 @@ public class Level_05_Page_Generator extends BaseTest{
   		
   		dashboardPage = loginPage.clickToLoginButton();
   		
-  		accountInformationPage = dashboardPage.clickOnAccountInformation();
+  		accountInformationPage = dashboardPage.openAccountInformation(driver);
   		
   		accountInformationPage.editFirstNameTextBox();
   		accountInformationPage.editLastNameTextBox();

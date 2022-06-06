@@ -8,10 +8,7 @@ public class StudentManagement {
 
 
 	public StudentManagement(int studentCode, String studentName, float theoryPoint, float practicePoint) {
-		this.studentCode = studentCode;
-		this.studentName = studentName;
-		this.theoryPoint = theoryPoint;
-		this.practicePoint = practicePoint;
+		
 	}
 
 	public StudentManagement() {

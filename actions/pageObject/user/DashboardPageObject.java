@@ -40,12 +40,6 @@ public class DashboardPageObject extends BasePage{
 		return getElementText(driver, DashboardPageUI.CONTACT_INFORMATION);
 	}
 
-	public AccountInformationPageObject clickOnAccountInformation() {
-		waitForElementPresence(driver, DashboardPageUI.ACCOUNT_INFORMATION);
-		clickToElement(driver, DashboardPageUI.ACCOUNT_INFORMATION);
-		return PageGeneratorManager.getAccountInformationPageObject(driver);
-	}
-
 	public String getEditSuccessMessage() {
 		return getElementText(driver, DashboardPageUI.EDIT_SUCCESSFUL_MESSAGE);
 	}
