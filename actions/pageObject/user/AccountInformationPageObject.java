@@ -14,11 +14,11 @@ public class AccountInformationPageObject extends BasePage{
 
 	public void editFirstNameTextBox() {
 		waitForElementVisible(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX);
-		sendKeyToElement(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX, "Quynh");
+		sendKeyToElement(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX, "Thanh");
 	}
 
 	public void editLastNameTextBox() {
-		sendKeyToElement(driver, AccountInformationPageUI.LAST_NAME_TEXT_BOX, "Giao");
+		sendKeyToElement(driver, AccountInformationPageUI.LAST_NAME_TEXT_BOX, "Phat");
 	}
 
 	public void inputToCurrentPasswordTextBox() {

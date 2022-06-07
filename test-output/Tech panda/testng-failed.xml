@@ -4,13 +4,14 @@
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.techpanda.account.Level_05_Page_Generator">
+      <class name="com.techpanda.account.Level_06_Switch_Page">
         <methods>
           <include name="afterClass"/>
+          <include name="TC_07_Login_Valid_Password"/>
           <include name="TC_08_Edit_Information"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.techpanda.account.Level_05_Page_Generator -->
+      </class> <!-- com.techpanda.account.Level_06_Switch_Page -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [Tech panda] -->

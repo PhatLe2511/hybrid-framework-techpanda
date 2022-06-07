@@ -10,4 +10,6 @@ public class BasePageUI {
 	public static final String MY_APPLICATIONS = "//a[text()='My Applications']";
 	public static final String ACCOUNT_INFORMATION = "//a[text()='Account Information']";
 	public static final String MY_DASHBOARD = "//a[text()='Account Dashboard']";
+	public static final String MY_ACCOUNT = "//div[@class='footer-container']//a[text()='My Account']";
+	
 }

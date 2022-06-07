@@ -19,6 +19,7 @@ import pageObject.user.AccountInformationPageObject;
 import pageObject.user.AddressBookPageObject;
 import pageObject.user.BillingAgreementsPageObject;
 import pageObject.user.DashboardPageObject;
+import pageObject.user.LoginPageObject;
 import pageObject.user.MyApplicationsPageObject;
 import pageObject.user.MyOrderPageObject;
 import pageObject.user.MyProductReviewPageObject;
@@ -317,6 +318,13 @@ public class BasePage {
 			e.printStackTrace();
 		}
 	}
+	
+	public LoginPageObject openLoginPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT);
+		clickToElement(driver, BasePageUI.MY_ACCOUNT);
+		return PageGeneratorManager.getLoginPageObject(driver);
+	}
+	
 	
 	public DashboardPageObject openMyDashboardPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.MY_DASHBOARD);
