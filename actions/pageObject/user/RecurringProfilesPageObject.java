@@ -2,12 +2,13 @@ package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 
-import commons.BasePage;
+import pageObject.Navigation.SideBarPageObject;
 
-public class RecurringProfilesPageObject extends BasePage{
+public class RecurringProfilesPageObject extends SideBarPageObject{
 	WebDriver driver;
 	
 	public RecurringProfilesPageObject (WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 }

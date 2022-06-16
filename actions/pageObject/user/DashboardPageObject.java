@@ -1,15 +1,15 @@
 package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
-
-import commons.BasePage;
+import pageObject.Navigation.SideBarPageObject;
 import pageUIs.user.DashboardPageUI;
 
-public class DashboardPageObject extends BasePage{
+public class DashboardPageObject extends SideBarPageObject{
 	
 	WebDriver driver;
 	
 	public DashboardPageObject (WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 
@@ -28,12 +28,6 @@ public class DashboardPageObject extends BasePage{
 
 	public void clickOnAccountButton() {
 		clickToElement(driver, DashboardPageUI.ACCOUNT_FIELD);
-	}
-
-	public HomePageObject clickOnLogOutButton() {
-		waitForElementPresence(driver, DashboardPageUI.LOGOUT_BUTTON);
-		clickToElement(driver, DashboardPageUI.LOGOUT_BUTTON);
-		return PageGeneratorManager.getHomePageObject(driver);
 	}
 
 	public String getContactInformation() {	

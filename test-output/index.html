@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content passed suite-Tech_panda">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Tech_panda" title="com.techpanda.account.Level_06_Switch_Page" class="method navigator-link" hash-for-method="TC_07_Login_Valid_Password">TC_07_Login_Valid_Password</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Tech_panda" title="com.techpanda.account.Level_06_Switch_Page" class="method navigator-link" hash-for-method="TC_09_Page_Navigation">TC_09_Page_Navigation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Tech_panda" title="com.techpanda.account.Level_08_Switch_Role" class="method navigator-link" hash-for-method="TC_01_Switch_Roles">TC_01_Switch_Roles</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Tech_panda -->
@@ -125,21 +120,14 @@
           <div class="suite-Tech_panda-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.techpanda.account.Level_06_Switch_Page</span>
+              <span class="class-name">com.techpanda.account.Level_08_Switch_Role</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_07_Login_Valid_Password">
-                  </a> <!-- TC_07_Login_Valid_Password -->
-                  <span class="method-name">TC_07_Login_Valid_Password</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_09_Page_Navigation">
-                  </a> <!-- TC_09_Page_Navigation -->
-                  <span class="method-name">TC_09_Page_Navigation</span>
+                  <a name="TC_01_Switch_Roles">
+                  </a> <!-- TC_01_Switch_Roles -->
+                  <span class="method-name">TC_01_Switch_Roles</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -154,10 +142,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Tech panda&quot;&gt;
+  &lt;parameter name=&quot;adminUrl&quot; value=&quot;http://live.techpanda.org/index.php/backendlogin&quot;/&gt;
+  &lt;parameter name=&quot;userUrl&quot; value=&quot;http://live.techpanda.org/index.php&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.techpanda.account.Level_06_Switch_Page&quot;/&gt;
+      &lt;class name=&quot;com.techpanda.account.Level_08_Switch_Role&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Tech panda --&gt;
@@ -197,20 +187,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_09_Page_Navigation')
-data.setCell(0, 2, 'com.techpanda.account.Level_06_Switch_Page')
-data.setCell(0, 3, 9413);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_07_Login_Valid_Password')
-data.setCell(1, 2, 'com.techpanda.account.Level_06_Switch_Page')
-data.setCell(1, 3, 6364);
+data.setCell(0, 1, 'TC_01_Switch_Roles')
+data.setCell(0, 2, 'com.techpanda.account.Level_08_Switch_Role')
+data.setCell(0, 3, 20166);
 window.suiteTableData['Tech_panda']= { tableData: data, tableDiv: 'times-div-Tech_panda'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Tech_panda">
               </div> <!-- times-div-Tech_panda -->
             </div> <!-- times-div -->
@@ -236,22 +222,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.techpanda.account.Level_06_Switch_Page</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.techpanda.account.Level_08_Switch_Role</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-name">beforeClass(chrome, http://live.techpanda.org/index.php, http://live.techpanda.org/index.php/backendlogin)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC_07_Login_Valid_Password</span>
-                <span class="method-start">6206 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_09_Page_Navigation</span>
-                <span class="method-start">12574 ms</span>
+                <span class="method-name">TC_01_Switch_Roles</span>
+                <span class="method-start">7600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">21994 ms</span>
+                <span class="method-start">27775 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

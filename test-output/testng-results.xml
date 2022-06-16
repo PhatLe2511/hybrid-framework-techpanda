@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-06T16:56:11Z" name="Tech panda" finished-at="2022-06-06T16:56:33Z" duration-ms="22092">
+  <suite started-at="2022-06-16T15:19:36Z" name="Tech panda" finished-at="2022-06-16T15:20:04Z" duration-ms="27872">
     <groups>
     </groups>
-    <test started-at="2022-06-06T16:56:11Z" name="Run on Chrome" finished-at="2022-06-06T16:56:33Z" duration-ms="22092">
-      <class name="com.techpanda.account.Level_06_Switch_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.techpanda.account.Level_06_Switch_Page@58a9760d]" started-at="2022-06-06T16:56:11Z" name="beforeClass" finished-at="2022-06-06T16:56:18Z" duration-ms="6202" status="PASS">
+    <test started-at="2022-06-16T15:19:36Z" name="Run on Chrome" finished-at="2022-06-16T15:20:04Z" duration-ms="27872">
+      <class name="com.techpanda.account.Level_08_Switch_Role">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.techpanda.account.Level_08_Switch_Role@4e50c791]" started-at="2022-06-16T15:19:36Z" name="beforeClass" finished-at="2022-06-16T15:19:43Z" duration-ms="7596" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://live.techpanda.org/index.php]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://live.techpanda.org/index.php/backendlogin]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_07_Login_Valid_Password()[pri:0, instance:com.techpanda.account.Level_06_Switch_Page@58a9760d]" started-at="2022-06-06T16:56:18Z" name="TC_07_Login_Valid_Password" finished-at="2022-06-06T16:56:24Z" duration-ms="6364" status="PASS">
+        <test-method signature="TC_01_Switch_Roles()[pri:0, instance:com.techpanda.account.Level_08_Switch_Role@4e50c791]" started-at="2022-06-16T15:19:43Z" name="TC_01_Switch_Roles" finished-at="2022-06-16T15:20:04Z" duration-ms="20166" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_Login_Valid_Password -->
-        <test-method signature="TC_09_Page_Navigation()[pri:0, instance:com.techpanda.account.Level_06_Switch_Page@58a9760d]" started-at="2022-06-06T16:56:24Z" name="TC_09_Page_Navigation" finished-at="2022-06-06T16:56:33Z" duration-ms="9413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_09_Page_Navigation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_06_Switch_Page@58a9760d]" started-at="2022-06-06T16:56:33Z" name="afterClass" finished-at="2022-06-06T16:56:33Z" duration-ms="87" status="PASS">
+        </test-method> <!-- TC_01_Switch_Roles -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_08_Switch_Role@4e50c791]" started-at="2022-06-16T15:20:04Z" name="afterClass" finished-at="2022-06-16T15:20:04Z" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.techpanda.account.Level_06_Switch_Page -->
+      </class> <!-- com.techpanda.account.Level_08_Switch_Role -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Tech panda -->
 </testng-results>

@@ -32,6 +32,30 @@ public class BaseTest {
 	 	driver.manage().window().maximize();
 		return driver;
 	 }
+	 	
+	 	
+	 	protected WebDriver getWebBrowser(String broswerName, String urlValue) {
+	 		BrowserList broswerList = BrowserList.valueOf(broswerName.toUpperCase());
+	 	
+	 	switch (broswerList) {
+		case CHROME:
+			driver = WebDriverManager.chromedriver().create();
+			break;
+		case FIREFOX:
+			driver = WebDriverManager.firefoxdriver().create();
+			break;
+		case EDGE:
+			driver = WebDriverManager.edgedriver().create();
+			break;
+		default:
+			throw new IllegalArgumentException("Browser name is invalid");
+		}
+	 	driver.get(urlValue);
+	 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 	driver.manage().window().maximize();
+		return driver;
+	 }
+	 	
 	 	protected int getRandomNumber() {
 			Random rand = new Random();
 			return rand.nextInt(999999);

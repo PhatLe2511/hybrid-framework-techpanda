@@ -2,12 +2,13 @@ package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 
-import commons.BasePage;
+import pageObject.Navigation.SideBarPageObject;
 
-public class MyProductReviewPageObject extends BasePage{
+public class MyProductReviewPageObject extends SideBarPageObject{
 	WebDriver driver;
 	
 	public MyProductReviewPageObject (WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 }

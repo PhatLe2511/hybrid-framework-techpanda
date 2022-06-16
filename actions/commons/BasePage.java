@@ -15,21 +15,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject.user.AccountInformationPageObject;
-import pageObject.user.AddressBookPageObject;
-import pageObject.user.BillingAgreementsPageObject;
-import pageObject.user.DashboardPageObject;
-import pageObject.user.LoginPageObject;
-import pageObject.user.MyApplicationsPageObject;
-import pageObject.user.MyOrderPageObject;
-import pageObject.user.MyProductReviewPageObject;
-import pageObject.user.MyWishlistPageObject;
+import pageObject.Navigation.FooterContainerPageObject;
+import pageObject.admin.AdminLoginPageObject;
 import pageObject.user.PageGeneratorManager;
-import pageObject.user.RecurringProfilesPageObject;
-import pageUIs.user.BasePageUI;
+import pageObject.user.UserHomePageObject;
+import pageUIs.admin.AdminHomePageUI;
+import pageUIs.user.DashboardPageUI;
 
 public class BasePage {
-	
 	
 	public static BasePage getBasePageInstance() {
 		return new BasePage();
@@ -310,74 +303,41 @@ public class BasePage {
 		return new WebDriverWait(driver, longTimeout).until(ExpectedConditions.alertIsPresent());
 	}
 	
+	
+	public FooterContainerPageObject getFooterContainerPage(WebDriver driver) {
+		return new FooterContainerPageObject(driver);
+		
+	}
+	
+	public AdminLoginPageObject openAdminLoginPage(WebDriver driver, String adminUrl) {
+		openPageUrl(driver, adminUrl);
+		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+	
+	public UserHomePageObject openUserHomePage(WebDriver driver, String userUrl) {
+		openPageUrl(driver, userUrl);
+		return PageGeneratorManager.getUserHomePageObject(driver);
+		}
+	
+	public AdminLoginPageObject clickLogOutButton(WebDriver driver) {
+		waitForElementClickable(driver, AdminHomePageUI.LOG_OUT_BUTTON);
+		clickToElement(driver, AdminHomePageUI.LOG_OUT_BUTTON);
+		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+	
+	public UserHomePageObject clickOnLogOutButton(WebDriver driver) {
+		waitForElementPresence(driver, DashboardPageUI.LOGOUT_BUTTON);
+		clickToElement(driver, DashboardPageUI.LOGOUT_BUTTON);
+		return PageGeneratorManager.getUserHomePageObject(driver);
+	}
+	
+	
 	public void sleepInSecond(long second) {
 		try {
 			Thread.sleep(second * 3000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-	
-	public LoginPageObject openLoginPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_ACCOUNT);
-		clickToElement(driver, BasePageUI.MY_ACCOUNT);
-		return PageGeneratorManager.getLoginPageObject(driver);
-	}
-	
-	
-	public DashboardPageObject openMyDashboardPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_DASHBOARD);
-		clickToElement(driver, BasePageUI.MY_DASHBOARD);
-		return PageGeneratorManager.getDashboardPageObject(driver);
-	}
-	
-	public AccountInformationPageObject openAccountInformation(WebDriver driver) {
-		waitForElementPresence(driver, BasePageUI.ACCOUNT_INFORMATION);
-		clickToElement(driver, BasePageUI.ACCOUNT_INFORMATION);
-		return PageGeneratorManager.getAccountInformationPageObject(driver);
-	}
-	
-	public AddressBookPageObject openAddressBookPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ADDRESS_BOOK);
-		clickToElement(driver, BasePageUI.ADDRESS_BOOK);
-		return PageGeneratorManager.getAddressBookPageObject(driver);
-	}
-	
-	public MyOrderPageObject openMyOrderPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_ORDERS);
-		clickToElement(driver, BasePageUI.MY_ORDERS);
-		return PageGeneratorManager.getMyOrderPageObject(driver);
-	}
-	
-	public BillingAgreementsPageObject openBillingAgreementsPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.BILLING_AGREEMENTS);
-		clickToElement(driver, BasePageUI.BILLING_AGREEMENTS);
-		return PageGeneratorManager.getBillingAgreementsPageObject(driver);
-	}
-	
-	public RecurringProfilesPageObject openRecurringProfilesPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.RECURRING_PROFILES);
-		clickToElement(driver, BasePageUI.RECURRING_PROFILES);
-		return PageGeneratorManager.getRecurringProfilesPageObject(driver);
-	}
-	
-	public MyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_PRODUCT_REVIEWS);
-		clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEWS);
-		return PageGeneratorManager.getMyProductReviewPageObject(driver);
-	}
-	
-	public MyWishlistPageObject openMyWishlistPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_WISHLIST);
-		clickToElement(driver, BasePageUI.MY_WISHLIST);
-		return PageGeneratorManager.getMyWishlistPageObject(driver);
-	}
-	
-	public MyApplicationsPageObject openMyApplicationsPageObject(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_APPLICATIONS);
-		clickToElement(driver, BasePageUI.MY_APPLICATIONS);
-		return PageGeneratorManager.getMyApplicationsPageObject(driver);
 	}
 	
 	

@@ -12,15 +12,15 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObject.user.CreateNewAccountPageObject;
 import pageObject.user.DashboardPageObject;
-import pageObject.user.HomePageObject;
-import pageObject.user.LoginPageObject;
+import pageObject.user.UserHomePageObject;
+import pageObject.user.UserLoginPageObject;
 
 @Test
 public class Level_04_Multiple_Browser extends BaseTest{
 	
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	DashboardPageObject dashboardPage;
 	CreateNewAccountPageObject createNewAccountPage;
 	String firstName = "Le";
@@ -33,7 +33,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
   public void beforeClass(String browserName) {
 	  driver = getWebBrowser(browserName);
 	  driver.get("http://live.techpanda.org/");
-	  homePage = new HomePageObject(driver);
+	  homePage = new UserHomePageObject(driver);
   }
   
 
@@ -43,7 +43,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
   	
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("");
   		loginPage.inputToPasswordTextBox("");
   		loginPage.clickToLoginButton();
@@ -102,7 +102,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		Assert.assertEquals(dashboardPage.getWelcomeMessage(), "Hello, " + fullName + "!");
 		
 		dashboardPage.clickOnAccountButton();
-		dashboardPage.clickOnLogOutButton();
+		dashboardPage.clickOnLogOutButton(driver);
 		
 		Assert.assertTrue(homePage.homePageImage());
 		
@@ -113,7 +113,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("thanhphatttt@gmail.com");
   		loginPage.inputToPasswordTextBox("123456789");
   		loginPage.clickToLoginButton();
@@ -126,7 +126,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox(email);
   		loginPage.inputToPasswordTextBox(String.valueOf(getRandomNumber()));
   		loginPage.clickToLoginButton();
@@ -136,10 +136,10 @@ public class Level_04_Multiple_Browser extends BaseTest{
 	
   	@Test
 	public void TC_07_Login_Valid_Password() {
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
 		homePage.clickToMyAccountLink();
   		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(email);
   		loginPage.inputToPasswordTextBox("123456789");
   		loginPage.clickToLoginButton();

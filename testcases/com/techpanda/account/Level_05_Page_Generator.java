@@ -11,16 +11,16 @@ import commons.BaseTest;
 import pageObject.user.AccountInformationPageObject;
 import pageObject.user.CreateNewAccountPageObject;
 import pageObject.user.DashboardPageObject;
-import pageObject.user.HomePageObject;
-import pageObject.user.LoginPageObject;
+import pageObject.user.UserHomePageObject;
+import pageObject.user.UserLoginPageObject;
 import pageObject.user.PageGeneratorManager;
 
 @Test
 public class Level_05_Page_Generator extends BaseTest{
 	
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	DashboardPageObject dashboardPage;
 	CreateNewAccountPageObject createNewAccountPage;
 	AccountInformationPageObject accountInformationPage;
@@ -34,7 +34,7 @@ public class Level_05_Page_Generator extends BaseTest{
   public void beforeClass(String browserName) {
 	  driver = getWebBrowser(browserName);
 	  driver.get("http://live.techpanda.org/");
-	  homePage = PageGeneratorManager.getHomePageObject(driver);
+	  homePage = PageGeneratorManager.getUserHomePageObject(driver);
   }
   
 
@@ -100,7 +100,7 @@ public class Level_05_Page_Generator extends BaseTest{
 		Assert.assertEquals(dashboardPage.getWelcomeMessage(), "Hello, " + fullName + "!");
 		
 		dashboardPage.clickOnAccountButton();
-		homePage = dashboardPage.clickOnLogOutButton();
+		homePage = dashboardPage.clickOnLogOutButton(driver);
 		
 		Assert.assertTrue(homePage.homePageImage());
 		
@@ -145,7 +145,7 @@ public class Level_05_Page_Generator extends BaseTest{
 		Assert.assertTrue(dashboardPage.getContactInformation().contains(email));
 		
 		dashboardPage.clickOnAccountButton();
-		dashboardPage.clickOnLogOutButton();
+		dashboardPage.clickOnLogOutButton(driver);
 	}
   	
   	
@@ -158,7 +158,7 @@ public class Level_05_Page_Generator extends BaseTest{
   		
   		dashboardPage = loginPage.clickToLoginButton();
   		
-  		accountInformationPage = dashboardPage.openAccountInformation(driver);
+  		accountInformationPage = dashboardPage.openAccountInformation();
   		
   		accountInformationPage.editFirstNameTextBox();
   		accountInformationPage.editLastNameTextBox();

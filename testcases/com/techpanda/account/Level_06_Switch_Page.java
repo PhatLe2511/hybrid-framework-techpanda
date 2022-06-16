@@ -13,8 +13,8 @@ import pageObject.user.AddressBookPageObject;
 import pageObject.user.BillingAgreementsPageObject;
 import pageObject.user.CreateNewAccountPageObject;
 import pageObject.user.DashboardPageObject;
-import pageObject.user.HomePageObject;
-import pageObject.user.LoginPageObject;
+import pageObject.user.UserHomePageObject;
+import pageObject.user.UserLoginPageObject;
 import pageObject.user.MyApplicationsPageObject;
 import pageObject.user.MyOrderPageObject;
 import pageObject.user.MyProductReviewPageObject;
@@ -26,8 +26,8 @@ import pageObject.user.RecurringProfilesPageObject;
 public class Level_06_Switch_Page extends BaseTest{
 	
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	MyOrderPageObject myOrderPage;
 	MyWishlistPageObject myWishList;
 	DashboardPageObject dashboardPage;
@@ -49,7 +49,7 @@ public class Level_06_Switch_Page extends BaseTest{
   public void beforeClass(String browserName) {
 	  driver = getWebBrowser(browserName);
 	  driver.get("http://live.techpanda.org/");
-	  homePage = PageGeneratorManager.getHomePageObject(driver);
+	  homePage = PageGeneratorManager.getUserHomePageObject(driver);
   }
   
   @Test
@@ -113,7 +113,7 @@ public class Level_06_Switch_Page extends BaseTest{
 		Assert.assertEquals(dashboardPage.getWelcomeMessage(), "Hello, " + fullName + "!");
 		
 		dashboardPage.clickOnAccountButton();
-		homePage = dashboardPage.clickOnLogOutButton();
+		homePage = dashboardPage.clickOnLogOutButton(driver);
 		
 		Assert.assertTrue(homePage.homePageImage());
 		
@@ -158,7 +158,7 @@ public class Level_06_Switch_Page extends BaseTest{
 		Assert.assertTrue(dashboardPage.getContactInformation().contains(email));
 		
 		dashboardPage.clickOnAccountButton();
-		dashboardPage.clickOnLogOutButton();
+		dashboardPage.clickOnLogOutButton(driver);
 	}
   	
   	
@@ -171,7 +171,7 @@ public class Level_06_Switch_Page extends BaseTest{
   		
   		dashboardPage = loginPage.clickToLoginButton();
   		
-  		accountInformationPage = dashboardPage.openAccountInformation(driver);
+  		accountInformationPage = dashboardPage.openAccountInformation();
   		
   		accountInformationPage.editFirstNameTextBox();
   		accountInformationPage.editLastNameTextBox();
@@ -184,23 +184,23 @@ public class Level_06_Switch_Page extends BaseTest{
   	
   	@Test
   	public void TC_09_Page_Navigation() {
-  		accountInformationPage = dashboardPage.openAccountInformation(driver);
+  		accountInformationPage = dashboardPage.openAccountInformation();
   		
-  		addressBookPage = accountInformationPage.openAddressBookPage(driver);
+  		addressBookPage = accountInformationPage.openAddressBookPage();
   		
-  		myOrderPage = addressBookPage.openMyOrderPage(driver);
+  		myOrderPage = addressBookPage.openMyOrderPage();
   		
-  		billingAgreementsPage = myOrderPage.openBillingAgreementsPage(driver);
+  		billingAgreementsPage = myOrderPage.openBillingAgreementsPage();
   		
-  		recurringProfilesPage = billingAgreementsPage.openRecurringProfilesPage(driver);
+  		recurringProfilesPage = billingAgreementsPage.openRecurringProfilesPage();
   		
-  		myProductReviewsPage = recurringProfilesPage.openMyProductReviewPage(driver);
+  		myProductReviewsPage = recurringProfilesPage.openMyProductReviewPage();
   		
-  		myWishList = myProductReviewsPage.openMyWishlistPage(driver);
+  		myWishList = myProductReviewsPage.openMyWishlistPage();
   		
-  		myApplicationsPage = myWishList.openMyApplicationsPageObject(driver);
+  		myApplicationsPage = myWishList.openMyApplicationsPageObject();
   		
-  		dashboardPage = myApplicationsPage.openMyDashboardPage(driver);
+  		dashboardPage = myApplicationsPage.openMyDashboardPage();
   	}
 
   @AfterClass

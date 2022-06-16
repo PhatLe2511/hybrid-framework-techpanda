@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Tech panda]">
+  <parameter name="adminUrl" value="http://live.techpanda.org/index.php/backendlogin"/>
+  <parameter name="userUrl" value="http://live.techpanda.org/index.php"/>
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.techpanda.account.Level_06_Switch_Page">
+      <class name="com.techpanda.account.Level_08_Switch_Role">
         <methods>
-          <include name="TC_09_Page_Navigation"/>
           <include name="afterClass"/>
+          <include name="TC_01_Switch_Roles"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.techpanda.account.Level_06_Switch_Page -->
+      </class> <!-- com.techpanda.account.Level_08_Switch_Role -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [Tech panda] -->

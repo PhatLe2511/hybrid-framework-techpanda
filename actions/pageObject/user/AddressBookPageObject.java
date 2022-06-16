@@ -2,12 +2,13 @@ package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 
-import commons.BasePage;
+import pageObject.Navigation.SideBarPageObject;
 
-public class AddressBookPageObject extends BasePage{
+public class AddressBookPageObject extends SideBarPageObject{
 	WebDriver driver;
 	
 	public AddressBookPageObject (WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 

@@ -2,15 +2,18 @@ package pageObject.user;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObject.admin.AdminHomePageObject;
+import pageObject.admin.AdminLoginPageObject;
+
 public class PageGeneratorManager {
 	
 	
-	public static HomePageObject getHomePageObject(WebDriver driver) {
-		return new HomePageObject(driver);
+	public static UserHomePageObject getUserHomePageObject(WebDriver driver) {
+		return new UserHomePageObject(driver);
 	}
 	
-	public static LoginPageObject getLoginPageObject(WebDriver driver) {
-		return new LoginPageObject(driver);
+	public static UserLoginPageObject getUserLoginPageObject(WebDriver driver) {
+		return new UserLoginPageObject(driver);
 	}
 	
 	public static CreateNewAccountPageObject getCreateNewAccountPageObject(WebDriver driver) {
@@ -53,6 +56,29 @@ public class PageGeneratorManager {
 		return new MyApplicationsPageObject(driver);
 	}
 	
+	public static AboutUsPageObject getAboutUsPageObject(WebDriver driver) {
+		return new AboutUsPageObject(driver);
+	}
 	
+	public static ContactUsPageObject getContactUsPageObject(WebDriver driver) {
+		return new ContactUsPageObject(driver);
+	}
 
+	public static SearchTermsPageObject getSearchTermsPageObject(WebDriver driver) {
+		return new SearchTermsPageObject(driver);
+	}
+	
+	public static MyAccountPageObject getFooterMyAccountPageObject(WebDriver driver) {
+		return new MyAccountPageObject(driver);
+	}
+
+	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);	
+	}
+	
+	public static AdminHomePageObject getAdminHomePage(WebDriver driver) {
+		
+		return new AdminHomePageObject(driver);
+		
+	}
 }

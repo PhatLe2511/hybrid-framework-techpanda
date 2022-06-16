@@ -11,8 +11,8 @@ import org.testng.annotations.Test;
 
 import pageObject.user.CreateNewAccountPageObject;
 import pageObject.user.DashboardPageObject;
-import pageObject.user.HomePageObject;
-import pageObject.user.LoginPageObject;
+import pageObject.user.UserHomePageObject;
+import pageObject.user.UserLoginPageObject;
 
 @Test
 public class Level_03_Design_Pattern{
@@ -20,8 +20,8 @@ public class Level_03_Design_Pattern{
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
-	HomePageObject homePage;
-	LoginPageObject loginPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
 	DashboardPageObject dashboardPage;
 	CreateNewAccountPageObject createNewAccountPage;
 	String firstName = "Le";
@@ -52,10 +52,10 @@ public class Level_03_Design_Pattern{
   	@Test
   	public void TC_01_Login_Empty_Data() {
   		
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("");
   		loginPage.inputToPasswordTextBox("");
   		loginPage.clickToLoginButton();
@@ -67,10 +67,10 @@ public class Level_03_Design_Pattern{
   	@Test
 	public void TC_02_Login_With_Invalid_Email() {
   		
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("thanhphat@1241");
   		loginPage.inputToPasswordTextBox("123456");
   		loginPage.clickToLoginButton();
@@ -81,10 +81,10 @@ public class Level_03_Design_Pattern{
   	@Test
 	public void TC_03_Login_With_Invalid_Password() {
 		
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("thanhphat@gmail.com");
   		loginPage.inputToPasswordTextBox("123");
   		loginPage.clickToLoginButton();
@@ -95,10 +95,10 @@ public class Level_03_Design_Pattern{
   	
   	@Test
 	public void TC_04_Create_New_Account() {
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.clickOnCreateNewAccountButton();
   		
   		createNewAccountPage = new CreateNewAccountPageObject(driver);
@@ -120,9 +120,9 @@ public class Level_03_Design_Pattern{
 		Assert.assertEquals(dashboardPage.getWelcomeMessage(), "Hello, " + fullName + "!");
 		
 		dashboardPage.clickOnAccountButton();
-		dashboardPage.clickOnLogOutButton();
+		dashboardPage.clickOnLogOutButton(driver);
 		
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		Assert.assertTrue(homePage.homePageImage());
 		
 	}
@@ -130,10 +130,10 @@ public class Level_03_Design_Pattern{
   	@Test
 	public void TC_05_Login_With_Incorrect_Email() {
 		
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox("thanhphatttt@gmail.com");
   		loginPage.inputToPasswordTextBox("123456789");
   		loginPage.clickToLoginButton();
@@ -144,10 +144,10 @@ public class Level_03_Design_Pattern{
   	@Test
 	public void TC_06_Login_With_Incorrect_Password() {
 		
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
   		homePage.clickToMyAccountLink();
   		
-  		loginPage = new LoginPageObject(driver);
+  		loginPage = new UserLoginPageObject(driver);
   		loginPage.inputToEmailTextBox(email);
   		loginPage.inputToPasswordTextBox(String.valueOf(getRandomNumber()));
   		loginPage.clickToLoginButton();
@@ -157,10 +157,10 @@ public class Level_03_Design_Pattern{
 	
   	@Test
 	public void TC_07_Login_Valid_Password() {
-  		homePage = new HomePageObject(driver);
+  		homePage = new UserHomePageObject(driver);
 		homePage.clickToMyAccountLink();
   		
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.inputToEmailTextBox(email);
   		loginPage.inputToPasswordTextBox("123456789");
   		loginPage.clickToLoginButton();
