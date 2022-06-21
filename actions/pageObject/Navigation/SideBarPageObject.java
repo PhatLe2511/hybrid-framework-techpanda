@@ -75,4 +75,10 @@ public class SideBarPageObject extends BasePage{
 		clickToElement(driver, BasePageUI.MY_APPLICATIONS);
 		return PageGeneratorManager.getMyApplicationsPageObject(driver);
 	}
+	
+	public void openSideBarByLink(String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_SIDE_BAR_LINK, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_SIDE_BAR_LINK, pageName);
+	}
+	
 }

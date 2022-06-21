@@ -42,5 +42,26 @@ public class FooterContainerPageObject extends BasePage{
 		return PageGeneratorManager.getFooterMyAccountPageObject(driver);
 	}
 	
+	public void openFooterContainerLink(String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_FOOTER_CONTAINER_LINK, pageName);
+		clickToElement(driver, 	BasePageUI.DYNAMIC_FOOTER_CONTAINER_LINK, pageName);
+	}
 	
+	public FooterContainerPageObject openFooterContainerLinks(String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_FOOTER_CONTAINER_LINK, pageName);
+		clickToElement(driver, 	BasePageUI.DYNAMIC_FOOTER_CONTAINER_LINK, pageName);
+		
+		//Bad Coding, chỉ apply cho những page ít menu
+		if (pageName.equals("About Us")) {
+			return PageGeneratorManager.getAboutUsPageObject(driver);
+		}else if (pageName.equals("Contact Us")) {
+			return PageGeneratorManager.getContactUsPageObject(driver);
+		}else if (pageName.equals("Search Terms")) {
+			return PageGeneratorManager.getSearchTermsPageObject(driver);
+		}else if (pageName.equals("My Account")) {
+			return PageGeneratorManager.getFooterMyAccountPageObject(driver);
+		} else {
+		return null;
+		}
+	}
 }
