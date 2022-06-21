@@ -9,8 +9,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	 	WebDriver driver;
-	 	String projectPath = System.getProperty("user.dir");
-	 	
 	 	
 	 	protected WebDriver getWebBrowser(String broswerName) {
 	 		BrowserList broswerList = BrowserList.valueOf(broswerName.toUpperCase());
@@ -28,7 +26,8 @@ public class BaseTest {
 		default:
 			throw new IllegalArgumentException("Browser name is invalid");
 		}
-	 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 	driver.get("");
+	 	driver.manage().timeouts().implicitlyWait(GlobalContants.LONG_TIMEOUT, TimeUnit.SECONDS);
 	 	driver.manage().window().maximize();
 		return driver;
 	 }
@@ -51,7 +50,7 @@ public class BaseTest {
 			throw new IllegalArgumentException("Browser name is invalid");
 		}
 	 	driver.get(urlValue);
-	 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 	driver.manage().timeouts().implicitlyWait(GlobalContants.LONG_TIMEOUT, TimeUnit.SECONDS);
 	 	driver.manage().window().maximize();
 		return driver;
 	 }

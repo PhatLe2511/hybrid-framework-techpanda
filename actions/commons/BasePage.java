@@ -297,35 +297,35 @@ public class BasePage {
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
 	}
 	
 	public void waitForElementPresence(WebDriver driver, String locator) {
-		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.presenceOfElementLocated(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(locator)));
 	}
 	
 	public void waitForElementPresence(WebDriver driver, String locator, String... values) {
-		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.presenceOfElementLocated(getByLocator(castRestParamater(locator, values))));
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(castRestParamater(locator, values))));
 	} 
 	
 	public boolean waitForElementInvisible(WebDriver driver, String locator) {
-		return new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
+		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
 	}
 	
 	public boolean waitForElementInvisible(WebDriver driver, String locator, String... values) {
-		return new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
+		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
 	}
 	
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
 	}
  	
 	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
-		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParamater(locator, values))));
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParamater(locator, values))));
 	}
 	
 	public Alert waitForAlertPresence(WebDriver driver) {
-		return new WebDriverWait(driver, longTimeout).until(ExpectedConditions.alertIsPresent());
+		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.alertIsPresent());
 	}
 	
 	public By getByLocator(String locator) {
@@ -384,8 +384,5 @@ public class BasePage {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	private long longTimeout = 30;
 		
 }

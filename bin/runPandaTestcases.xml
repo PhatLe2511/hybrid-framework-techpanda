@@ -3,12 +3,11 @@
 	<!--<parameter name ="userUrl" value ="http://live.techpanda.org/index.php"/> -->
 	<!--<parameter name ="adminUrl" value ="http://live.techpanda.org/index.php/backendlogin"/> -->
 	
-	<parameter name ="url" value ="http://live.techpanda.org/"/>
+	<!--<parameter name ="url" value ="http://live.techpanda.org/"/> -->
     <test name="Run on Chrome">
     <parameter name ="Browser" value ="chrome" />
     <classes>
-      <class name="com.techpanda.account.Level_09_Dynamic_Locator_I"/>
-      <class name="com.techpanda.account.Level_09_Dynamic_Locator_II"/>
+      <class name="com.techpanda.account.Level_10_Global_Contants"/>
     </classes>
   </test>
 </suite> <!-- Suite --> 
