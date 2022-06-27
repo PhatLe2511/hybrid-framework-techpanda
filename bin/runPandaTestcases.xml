@@ -3,11 +3,11 @@
 	<!--<parameter name ="userUrl" value ="http://live.techpanda.org/index.php"/> -->
 	<!--<parameter name ="adminUrl" value ="http://live.techpanda.org/index.php/backendlogin"/> -->
 	
-	<!--<parameter name ="url" value ="http://live.techpanda.org/"/> -->
+	<parameter name ="url" value ="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"/>
     <test name="Run on Chrome">
     <parameter name ="Browser" value ="chrome" />
     <classes>
-      <class name="com.techpanda.account.Level_10_Global_Contants"/>
+      <class name="com.jquery.datatable.Level_11_Data_Table_Part_II"/>
     </classes>
   </test>
 </suite> <!-- Suite --> 

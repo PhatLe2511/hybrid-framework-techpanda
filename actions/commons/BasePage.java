@@ -20,6 +20,7 @@ import pageObject.admin.AdminLoginPageObject;
 import pageObject.user.PageGeneratorManager;
 import pageObject.user.UserHomePageObject;
 import pageUIs.admin.AdminHomePageUI;
+import pageUIs.jQuery.HomePageUI;
 import pageUIs.user.DashboardPageUI;
 
 public class BasePage {
@@ -205,6 +206,10 @@ public class BasePage {
 		return getElements(driver, Locator).size();
 	}
 	
+	public int getListElementSize(WebDriver driver, String Locator, String... dynamicLocator) {
+		return getElements(driver, castRestParamater(Locator, dynamicLocator)).size();
+	}
+	
 	public String getHexaColorByRgbaColor(String rgbaValue) {
 		return Color.fromString(rgbaValue).asHex();
 	}
@@ -225,6 +230,10 @@ public class BasePage {
   	
 	public boolean isElementDisplayed(WebDriver driver, String Locator) {
 		return getElement(driver, Locator).isDisplayed();
+	}
+	
+	public boolean isElementDisplayed(WebDriver driver, String Locator, String... values) {
+		return getElement(driver, castRestParamater(Locator, values)).isDisplayed();
 	}
 	
 	public boolean isElementSelected(WebDriver driver, String Locator) {
@@ -263,9 +272,14 @@ public class BasePage {
 		action.dragAndDrop(getElement(driver, sourceLocator), getElement(driver, targetLocator)).perform();
 	}
 	
-	public void sendKeysToElement(WebDriver driver, String Locator, Keys key) {
+	public void pressKeyToElement(WebDriver driver, String Locator, Keys key) {
 		Actions action = new Actions(driver);
 		action.sendKeys(getElement(driver, Locator), key).perform(); 
+	}
+	
+	public void pressKeyToElement(WebDriver driver, String Locator, Keys key, String... values) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getElement(driver, castRestParamater(Locator, values)), key).perform(); 
 	}
 	
 	public void clickToElementByJS(WebDriver driver, String locator) {
@@ -300,6 +314,10 @@ public class BasePage {
 		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
 	}
 	
+	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
+	}
+	
 	public void waitForElementPresence(WebDriver driver, String locator) {
 		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(locator)));
 	}
@@ -319,6 +337,10 @@ public class BasePage {
 	public void waitForElementClickable(WebDriver driver, String locator) {
 		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
 	}
+	
+	public void waitForElementClickable(WebDriver driver, WebElement element) { 
+		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(element));
+	}
  	
 	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
 		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParamater(locator, values))));
@@ -327,6 +349,19 @@ public class BasePage {
 	public Alert waitForAlertPresence(WebDriver driver) {
 		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.alertIsPresent());
 	}
+	
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+			String uploadFilePath = GlobalContants.UPLOAD_PATH;
+			
+			String fullFileName ="";
+			
+			for (String file : fileNames) {
+				fullFileName = fullFileName + uploadFilePath + file + "\n";
+			}
+			
+			fullFileName = fullFileName.trim();
+			getElement(driver, HomePageUI.ADD_FILE_BUTTON).sendKeys(fullFileName);
+		}
 	
 	public By getByLocator(String locator) {
 		By by;
@@ -344,8 +379,8 @@ public class BasePage {
 	return by;
 }
 	
-	public String castRestParamater(String locator, String... values) {
-		locator = String.format(locator, (Object[]) values);
+	public String castRestParamater(String locator, String... dynamicLocator) {
+		locator = String.format(locator, (Object[]) dynamicLocator);
 		return locator;
 	}
 	

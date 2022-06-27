@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-20T00:46:01Z" name="Tech panda" finished-at="2022-06-20T00:46:44Z" duration-ms="43033">
+  <suite started-at="2022-06-27T14:48:13Z" name="Tech panda" finished-at="2022-06-27T14:48:30Z" duration-ms="16950">
     <groups>
     </groups>
-    <test started-at="2022-06-20T00:46:01Z" name="Run on Chrome" finished-at="2022-06-20T00:46:44Z" duration-ms="43033">
-      <class name="com.techpanda.account.Level_09_Dynamic_Locator_I">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_I@4961f6af]" started-at="2022-06-20T00:46:01Z" name="beforeClass" finished-at="2022-06-20T00:46:08Z" duration-ms="7326" status="PASS">
+    <test started-at="2022-06-27T14:48:13Z" name="Run on Chrome" finished-at="2022-06-27T14:48:30Z" duration-ms="16950">
+      <class name="com.jquery.datatable.Level_11_Data_Table_Part_II">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.datatable.Level_11_Data_Table_Part_II@4e50c791]" started-at="2022-06-27T14:48:13Z" name="beforeClass" finished-at="2022-06-27T14:48:20Z" duration-ms="7066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,64 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[http://live.techpanda.org/]]>
+                <![CDATA[https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Login_Valid_Password()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_I@4961f6af]" started-at="2022-06-20T00:46:08Z" name="TC_01_Login_Valid_Password" finished-at="2022-06-20T00:46:12Z" duration-ms="3582" status="PASS">
+        <test-method signature="TC_01()[pri:0, instance:com.jquery.datatable.Level_11_Data_Table_Part_II@4e50c791]" started-at="2022-06-27T14:48:20Z" name="TC_01" finished-at="2022-06-27T14:48:30Z" duration-ms="9770" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Valid_Password -->
-        <test-method signature="TC_02_Page_Navigation()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_I@4961f6af]" started-at="2022-06-20T00:46:12Z" name="TC_02_Page_Navigation" finished-at="2022-06-20T00:46:19Z" duration-ms="7409" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Page_Navigation -->
-        <test-method signature="TC_03_Footer_Page_Navigation()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_I@4961f6af]" started-at="2022-06-20T00:46:19Z" name="TC_03_Footer_Page_Navigation" finished-at="2022-06-20T00:46:22Z" duration-ms="2601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Footer_Page_Navigation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_I@4961f6af]" started-at="2022-06-20T00:46:22Z" name="afterClass" finished-at="2022-06-20T00:46:22Z" duration-ms="100" status="PASS">
+        </test-method> <!-- TC_01 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.datatable.Level_11_Data_Table_Part_II@4e50c791]" started-at="2022-06-27T14:48:30Z" name="afterClass" finished-at="2022-06-27T14:48:30Z" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.techpanda.account.Level_09_Dynamic_Locator_I -->
-      <class name="com.techpanda.account.Level_09_Dynamic_Locator_II">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_II@5aebe890]" started-at="2022-06-20T00:46:22Z" name="beforeClass" finished-at="2022-06-20T00:46:27Z" duration-ms="5061" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://live.techpanda.org/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Login_Valid_Password()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_II@5aebe890]" started-at="2022-06-20T00:46:27Z" name="TC_01_Login_Valid_Password" finished-at="2022-06-20T00:46:31Z" duration-ms="3553" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Login_Valid_Password -->
-        <test-method signature="TC_02_Page_Navigation()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_II@5aebe890]" started-at="2022-06-20T00:46:31Z" name="TC_02_Page_Navigation" finished-at="2022-06-20T00:46:40Z" duration-ms="9344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Page_Navigation -->
-        <test-method signature="TC_03_Footer_Page_Navigation()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_II@5aebe890]" started-at="2022-06-20T00:46:40Z" name="TC_03_Footer_Page_Navigation" finished-at="2022-06-20T00:46:44Z" duration-ms="3928" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Footer_Page_Navigation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.techpanda.account.Level_09_Dynamic_Locator_II@5aebe890]" started-at="2022-06-20T00:46:44Z" name="afterClass" finished-at="2022-06-20T00:46:44Z" duration-ms="88" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.techpanda.account.Level_09_Dynamic_Locator_II -->
+      </class> <!-- com.jquery.datatable.Level_11_Data_Table_Part_II -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- Tech panda -->
 </testng-results>

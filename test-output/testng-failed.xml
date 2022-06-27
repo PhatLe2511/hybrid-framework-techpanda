@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Tech panda]">
+  <parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/"/>
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="Browser" value="chrome"/>
     <classes>
-      <class name="com.techpanda.account.Level_10_Global_Contants">
+      <class name="com.jquery.datatable.Level_12_Upload_Files">
         <methods>
           <include name="afterClass"/>
-          <include name="TC_01_Switch_Roles"/>
           <include name="beforeClass"/>
+          <include name="TC_01_Upload_One_File"/>
         </methods>
-      </class> <!-- com.techpanda.account.Level_10_Global_Contants -->
+      </class> <!-- com.jquery.datatable.Level_12_Upload_Files -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [Tech panda] -->

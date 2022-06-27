@@ -26,7 +26,7 @@ public class BaseTest {
 		default:
 			throw new IllegalArgumentException("Browser name is invalid");
 		}
-	 	driver.get("");
+	 	driver.get("https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/");
 	 	driver.manage().timeouts().implicitlyWait(GlobalContants.LONG_TIMEOUT, TimeUnit.SECONDS);
 	 	driver.manage().window().maximize();
 		return driver;
