@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.techpanda.account.Level_08_Switch_Role">
+      <class name="com.jquery.datatable.Level_12_Upload_Files">
         <methods>
           <include name="afterClass"/>
-          <include name="TC_01_Switch_Roles"/>
           <include name="beforeClass"/>
+          <include name="TC_01_Upload_One_File"/>
+          <include name="TC_02_Upload_Multiple_File"/>
         </methods>
-      </class> <!-- com.techpanda.account.Level_08_Switch_Role -->
+      </class> <!-- com.jquery.datatable.Level_12_Upload_Files -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

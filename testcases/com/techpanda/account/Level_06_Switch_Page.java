@@ -171,11 +171,11 @@ public class Level_06_Switch_Page extends BaseTest{
   		
   		dashboardPage = loginPage.clickToLoginButton();
   		
-  		accountInformationPage = dashboardPage.openAccountInformation();
+  		accountInformationPage = dashboardPage.openAccountInformation("Account Information");
   		
-  		accountInformationPage.editFirstNameTextBox();
-  		accountInformationPage.editLastNameTextBox();
-  		accountInformationPage.inputToCurrentPasswordTextBox();
+  		accountInformationPage.editFirstNameTextBox("Thanh");
+  		accountInformationPage.editLastNameTextBox("Phat");
+  		accountInformationPage.inputToCurrentPasswordTextBox("123456789");
   		dashboardPage = accountInformationPage.clickOnSaveButton();
   		
   		Assert.assertEquals(dashboardPage.getEditSuccessMessage(), "The account information has been saved.");
@@ -184,7 +184,7 @@ public class Level_06_Switch_Page extends BaseTest{
   	
   	@Test
   	public void TC_09_Page_Navigation() {
-  		accountInformationPage = dashboardPage.openAccountInformation();
+  		accountInformationPage = dashboardPage.openAccountInformation("Account Information");
   		
   		addressBookPage = accountInformationPage.openAddressBookPage();
   		

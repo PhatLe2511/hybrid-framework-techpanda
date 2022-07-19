@@ -13,17 +13,17 @@ public class AccountInformationPageObject extends SideBarPageObject{
 		this.driver = driver;
 	}
 
-	public void editFirstNameTextBox() {
+	public void editFirstNameTextBox(String firstName) {
 		waitForElementVisible(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX);
-		sendKeyToElement(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX, "Thanh");
+		sendKeyToElement(driver, AccountInformationPageUI.FIRST_NAME_TEXT_BOX, firstName);
 	}
 
-	public void editLastNameTextBox() {
-		sendKeyToElement(driver, AccountInformationPageUI.LAST_NAME_TEXT_BOX, "Phat");
+	public void editLastNameTextBox(String lastName) {
+		sendKeyToElement(driver, AccountInformationPageUI.LAST_NAME_TEXT_BOX, lastName);
 	}
 
-	public void inputToCurrentPasswordTextBox() {
-		sendKeyToElement(driver, AccountInformationPageUI.CURRENT_PASSWORD_TEXT_BOX, "123456789");
+	public void inputToCurrentPasswordTextBox(String password) {
+		sendKeyToElement(driver, AccountInformationPageUI.CURRENT_PASSWORD_TEXT_BOX, password);
 	}
 
 	public DashboardPageObject clickOnSaveButton() {

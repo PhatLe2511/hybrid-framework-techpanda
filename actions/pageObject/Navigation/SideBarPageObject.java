@@ -28,9 +28,9 @@ public class SideBarPageObject extends BasePage{
 		return PageGeneratorManager.getDashboardPageObject(driver);
 	}
 	
-	public AccountInformationPageObject openAccountInformation() {
-		waitForElementPresence(driver, BasePageUI.ACCOUNT_INFORMATION);
-		clickToElement(driver, BasePageUI.ACCOUNT_INFORMATION);
+	public AccountInformationPageObject openAccountInformation(String pageName) {
+		waitForElementPresence(driver, BasePageUI.DYNAMIC_SIDE_BAR_LINK, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_SIDE_BAR_LINK, pageName);
 		return PageGeneratorManager.getAccountInformationPageObject(driver);
 	}
 	

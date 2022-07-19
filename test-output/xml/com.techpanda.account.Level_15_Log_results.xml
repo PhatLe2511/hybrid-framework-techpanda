@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RUN ON FIREFOX"
+           tests="8"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="35.640">
+  <properties />
+  
+  
+            <testcase name="TC_06_Login_With_Incorrect_Password" time="3.273" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_01_Login_Empty_Data" time="1.580" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_08_Edit_Information" time="5.437" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_05_Login_With_Incorrect_Email" time="2.873" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_04_Create_New_Account" time="11.002" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_07_Login_Valid_Password" time="7.850" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_02_Login_With_Invalid_Email" time="1.794" classname="com.techpanda.account.Level_15_Log" />
+                <testcase name="TC_03_Login_With_Invalid_Password" time="1.831" classname="com.techpanda.account.Level_15_Log" />
+      
+</testsuite>

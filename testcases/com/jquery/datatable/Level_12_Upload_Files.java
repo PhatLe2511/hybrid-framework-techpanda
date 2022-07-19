@@ -29,39 +29,32 @@ public class Level_12_Upload_Files extends BaseTest{
   
   @Test
   public void TC_01_Upload_One_File() {
-	  homePage.uploadMultipleFiles(driver, apiImage);
+	  homePage.uploadMultipleFile(driver, apiImage);
 	  
-	  Assert.assertTrue(homePage.isImageloaded(apiImage));
+	  Assert.assertTrue(homePage.isFileLoaded(apiImage));
 	  
 	  homePage.clickToStartButton();
 	  
-	  Assert.assertTrue(homePage.isImageUploaded(apiImage));	  
+	  Assert.assertTrue(homePage.isFileUploaded(apiImage));
 } 
   
   @Test
   public void TC_02_Upload_Multiple_File() {
+	  
 	  homePage.refreshCurrentPage(driver);
+	  homePage.uploadMultipleFile(driver, apiImage, seleniumImage, appiumImage);
 	  
-	  homePage.uploadMultipleFiles(driver, apiImage, appiumImage, seleniumImage);
-	  
-	  Assert.assertTrue(homePage.isImageloaded(apiImage));
-	 
-	  Assert.assertTrue(homePage.isImageloaded(appiumImage));
-	  
-	  Assert.assertTrue(homePage.isImageloaded(seleniumImage));
+	  Assert.assertTrue(homePage.isFileLoaded(apiImage));
+	  Assert.assertTrue(homePage.isFileLoaded(seleniumImage));
+	  Assert.assertTrue(homePage.isFileLoaded(appiumImage));
 	  
 	  homePage.clickToStartButton();
-	  
+	  homePage.clickToStartButton();
 	  homePage.clickToStartButton();
 	  
-	  homePage.clickToStartButton();
-	  
-	  Assert.assertTrue(homePage.isImageUploaded(apiImage));
-	  
-	  Assert.assertTrue(homePage.isImageUploaded(appiumImage));
-	  
-	  Assert.assertTrue(homePage.isImageUploaded(seleniumImage));
-	  
+	  Assert.assertTrue(homePage.isFileUploaded(apiImage));
+	  Assert.assertTrue(homePage.isFileUploaded(seleniumImage));
+	  Assert.assertTrue(homePage.isFileUploaded(appiumImage));
   }
 
   @AfterClass

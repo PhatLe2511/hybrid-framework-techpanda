@@ -1,7 +1,5 @@
 package com.techpanda.account;
 
-import java.util.Random;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -150,16 +148,7 @@ public class Level_04_Multiple_Browser extends BaseTest{
 		Assert.assertTrue(dashboardPage.getContactInformation().contains(fullName));
 		Assert.assertTrue(dashboardPage.getContactInformation().contains(email));
 	}
-  
-  
-  
-  public int getRandomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(999999);
-	}
-  
-
-  
+ 
   @AfterClass
   public void afterClass() {
 	   driver.quit();

@@ -66,7 +66,7 @@ public class Level_07_Page_Navigation extends BaseTest{
   	@Test
   	public void TC_02_Page_Navigation() {
   		
-  		accountInformationPage = dashboardPage.openAccountInformation();
+  		accountInformationPage = dashboardPage.openAccountInformation("Account Information");
   		
   		addressBookPage = accountInformationPage.openAddressBookPage();
   		

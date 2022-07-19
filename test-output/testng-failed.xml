@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Tech panda]">
-  <parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/"/>
-  <test thread-count="5" name="Run on Chrome(failed)">
-    <parameter name="Browser" value="chrome"/>
+  <parameter name="url" value="http://live.techpanda.org/"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="RUN ON FIREFOX(failed)">
+    <parameter name="Browser" value="firefox"/>
     <classes>
-      <class name="com.jquery.datatable.Level_12_Upload_Files">
+      <class name="com.techpanda.account.Level_17_Edit_Information_Cookies">
         <methods>
+          <include name="TC_08_Edit_Information"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="TC_01_Upload_One_File"/>
         </methods>
-      </class> <!-- com.jquery.datatable.Level_12_Upload_Files -->
+      </class> <!-- com.techpanda.account.Level_17_Edit_Information_Cookies -->
     </classes>
-  </test> <!-- Run on Chrome(failed) -->
+  </test> <!-- RUN ON FIREFOX(failed) -->
 </suite> <!-- Failed suite [Tech panda] -->

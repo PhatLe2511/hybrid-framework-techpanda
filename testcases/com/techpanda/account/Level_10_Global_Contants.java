@@ -7,7 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalContants;
+import commons.GlobalConstants;
 import pageObject.admin.AdminHomePageObject;
 import pageObject.admin.AdminLoginPageObject;
 import pageObject.user.DashboardPageObject;
@@ -29,8 +29,8 @@ public class Level_10_Global_Contants extends BaseTest{
   @Parameters({"Browser"})
   @BeforeClass
   public void beforeClass(String browserName) {
-	  this.userUrl = GlobalContants.LIVE_USER_URL;
-	  this.adminUrl = GlobalContants.LIVE_ADMIN_URL;
+	  this.userUrl = GlobalConstants.LIVE_USER_URL;
+	  this.adminUrl = GlobalConstants.LIVE_ADMIN_URL;
 	  
 	  driver = getWebBrowser(browserName, this.userUrl);
 	  userHomePage = PageGeneratorManager.getUserHomePageObject(driver);
@@ -39,19 +39,19 @@ public class Level_10_Global_Contants extends BaseTest{
   @Test
   public void TC_01_Switch_Roles() {
 	  	userLoginPage = userHomePage.clickToMyAccountLink();
-		userLoginPage.inputToEmailTextBox(GlobalContants.USER_USERNAME);
-		userLoginPage.inputToPasswordTextBox(GlobalContants.USER_PASSWORD);
+		userLoginPage.inputToEmailTextBox(GlobalConstants.USER_USERNAME);
+		userLoginPage.inputToPasswordTextBox(GlobalConstants.USER_PASSWORD);
 		dashboardPage = userLoginPage.clickToLoginButton();
 		
 		dashboardPage.clickOnAccountButton();
 		
 		userHomePage = dashboardPage.clickOnLogOutButton(driver);
 	  
-		adminLoginPage = userHomePage.openAdminLoginPage(driver, GlobalContants.LIVE_ADMIN_URL);
+		adminLoginPage = userHomePage.openAdminLoginPage(driver, GlobalConstants.LIVE_ADMIN_URL);
 		  
-		adminLoginPage.inputToUserNameTextBox(GlobalContants.ADMIN_USERNAME);
+		adminLoginPage.inputToUserNameTextBox(GlobalConstants.ADMIN_USERNAME);
 		  
-		adminLoginPage.inputToPasswordTextBox(GlobalContants.ADMIN_PASSWORD);
+		adminLoginPage.inputToPasswordTextBox(GlobalConstants.ADMIN_PASSWORD);
 		  
 		adminHomePage = adminLoginPage.clickOnLoginButton();
 		  
@@ -59,11 +59,11 @@ public class Level_10_Global_Contants extends BaseTest{
 		  
 		adminLoginPage = adminHomePage.clickLogOutButton(driver);
 		  
-		userHomePage = adminLoginPage.openUserHomePage(driver, GlobalContants.LIVE_USER_URL);
+		userHomePage = adminLoginPage.openUserHomePage(driver, GlobalConstants.LIVE_USER_URL);
 		  
 		userLoginPage = userHomePage.clickToMyAccountLink();
-		userLoginPage.inputToEmailTextBox(GlobalContants.USER_USERNAME);
-		userLoginPage.inputToPasswordTextBox(GlobalContants.USER_PASSWORD);
+		userLoginPage.inputToEmailTextBox(GlobalConstants.USER_USERNAME);
+		userLoginPage.inputToPasswordTextBox(GlobalConstants.USER_PASSWORD);
 		dashboardPage = userLoginPage.clickToLoginButton();
 } 
   

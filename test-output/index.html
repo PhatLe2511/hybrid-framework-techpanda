@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Tech_panda">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Tech_panda" title="com.jquery.datatable.Level_11_Data_Table_Part_II" class="method navigator-link" hash-for-method="TC_01">TC_01</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Tech_panda" title="com.techpanda.account.Level_17_Edit_Information_Cookies" class="method navigator-link" hash-for-method="TC_08_Edit_Information">TC_08_Edit_Information</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Tech_panda -->
@@ -120,14 +120,14 @@
           <div class="suite-Tech_panda-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.jquery.datatable.Level_11_Data_Table_Part_II</span>
+              <span class="class-name">com.techpanda.account.Level_17_Edit_Information_Cookies</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01">
-                  </a> <!-- TC_01 -->
-                  <span class="method-name">TC_01</span>
+                  <a name="TC_08_Edit_Information">
+                  </a> <!-- TC_08_Edit_Information -->
+                  <span class="method-name">TC_08_Edit_Information</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,13 +142,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Tech panda&quot;&gt;
-  &lt;parameter name=&quot;url&quot; value=&quot;https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;http://live.techpanda.org/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RUN ON FIREFOX&quot;&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.jquery.datatable.Level_11_Data_Table_Part_II&quot;/&gt;
+      &lt;class name=&quot;com.techpanda.common.Common_Register_Cookie&quot;/&gt;
+      &lt;class name=&quot;com.techpanda.account.Level_17_Edit_Information_Cookies&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
+  &lt;/test&gt; &lt;!-- RUN ON FIREFOX --&gt;
 &lt;/suite&gt; &lt;!-- Tech panda --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on Chrome (1 class)</span>
+                <span class="test-name">RUN ON FIREFOX (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_01')
-data.setCell(0, 2, 'com.jquery.datatable.Level_11_Data_Table_Part_II')
-data.setCell(0, 3, 9770);
+data.setCell(0, 1, 'TC_08_Edit_Information')
+data.setCell(0, 2, 'com.techpanda.account.Level_17_Edit_Information_Cookies')
+data.setCell(0, 3, 2231);
 window.suiteTableData['Tech_panda']= { tableData: data, tableDiv: 'times-div-Tech_panda'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Tech_panda">
               </div> <!-- times-div-Tech_panda -->
             </div> <!-- times-div -->
@@ -206,6 +212,25 @@ return data;
             <span class="header-content">Reporter output for Tech panda</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_08_Edit_Information</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:07,363] Edit account Information - Step 1: Open Account information page
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:08,313] Edit account Information - Step 2: Edit first name textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:08,366] Edit account Information - Step 3: Edit last name textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:08,395] Edit account Information - Step 4: Input into current password textbox
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:08,419] Edit account Information - Step 5: Click on save button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:09,563] Edit account Information - Step 6: Verify Success message
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-07-20 00:14:09,585]  -------------------------- PASSED -------------------------- 
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Tech_panda" class="panel">
@@ -221,18 +246,25 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.jquery.datatable.Level_11_Data_Table_Part_II</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome, https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/)</span>
+              <div class="chronological-class-name">com.techpanda.common.Common_Register_Cookie</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Register(firefox, http://live.techpanda.org/)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.techpanda.account.Level_17_Edit_Information_Cookies</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass(firefox, http://live.techpanda.org/)</span>
+                <span class="method-start">16323 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC_01</span>
-                <span class="method-start">7070 ms</span>
+                <span class="method-name">TC_08_Edit_Information</span>
+                <span class="method-start">28867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">16855 ms</span>
+                <span class="method-start">31103 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

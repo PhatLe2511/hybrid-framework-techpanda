@@ -8,7 +8,7 @@ public class BasePageUI {
 	public static final String MY_PRODUCT_REVIEWS = "xpath=//a[text()='My Product Reviews']";
 	public static final String MY_WISHLIST = "xpath=//div[@class='block block-account']//a[text()='My Wishlist']";
 	public static final String MY_APPLICATIONS = "xpath=//a[text()='My Applications']";
-	public static final String ACCOUNT_INFORMATION = "//a[text()='Account Information']";
+	public static final String ACCOUNT_INFORMATION = "xpath=//a[text()='Account Information']";
 	public static final String MY_DASHBOARD = "xpath=//a[text()='Account Dashboard']";
 	public static final String HEADER_MY_ACCOUNT = "xpath=//div[@class='footer-container']//a[text()='My Account']";
 	public static final String FOOTER_ABOUT_US = "xpath=//div[@class='footer-container']//a[text()='About Us']";

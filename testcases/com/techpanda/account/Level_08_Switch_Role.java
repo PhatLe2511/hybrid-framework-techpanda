@@ -7,7 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.GlobalContants;
+import commons.GlobalConstants;
 import pageObject.admin.AdminHomePageObject;
 import pageObject.admin.AdminLoginPageObject;
 import pageObject.user.DashboardPageObject;
@@ -39,8 +39,8 @@ public class Level_08_Switch_Role extends BaseTest{
   @Test
   public void TC_01_Switch_Roles() {
 	  	userLoginPage = userHomePage.clickToMyAccountLink();
-		userLoginPage.inputToEmailTextBox(GlobalContants.USER_USERNAME);
-		userLoginPage.inputToPasswordTextBox(GlobalContants.USER_PASSWORD);
+		userLoginPage.inputToEmailTextBox(GlobalConstants.USER_USERNAME);
+		userLoginPage.inputToPasswordTextBox(GlobalConstants.USER_PASSWORD);
 		dashboardPage = userLoginPage.clickToLoginButton();
 		
 		dashboardPage.clickOnAccountButton();
@@ -49,9 +49,9 @@ public class Level_08_Switch_Role extends BaseTest{
 	  
 		adminLoginPage = userHomePage.openAdminLoginPage(driver, adminUrl);
 		  
-		adminLoginPage.inputToUserNameTextBox(GlobalContants.ADMIN_USERNAME);
+		adminLoginPage.inputToUserNameTextBox(GlobalConstants.ADMIN_USERNAME);
 		  
-		adminLoginPage.inputToPasswordTextBox(GlobalContants.ADMIN_PASSWORD);
+		adminLoginPage.inputToPasswordTextBox(GlobalConstants.ADMIN_PASSWORD);
 		  
 		adminHomePage = adminLoginPage.clickOnLoginButton();
 		  
@@ -62,8 +62,8 @@ public class Level_08_Switch_Role extends BaseTest{
 		userHomePage = adminLoginPage.openUserHomePage(driver, userUrl);
 		  
 		userLoginPage = userHomePage.clickToMyAccountLink();
-		userLoginPage.inputToEmailTextBox(GlobalContants.USER_USERNAME);
-		userLoginPage.inputToPasswordTextBox(GlobalContants.USER_PASSWORD);
+		userLoginPage.inputToEmailTextBox(GlobalConstants.USER_USERNAME);
+		userLoginPage.inputToPasswordTextBox(GlobalConstants.USER_PASSWORD);
 		dashboardPage = userLoginPage.clickToLoginButton();
 } 
   

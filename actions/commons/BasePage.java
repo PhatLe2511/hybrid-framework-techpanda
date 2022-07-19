@@ -5,6 +5,7 @@ import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -311,57 +312,55 @@ public class BasePage {
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String locator) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(locator)));
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String locator, String... values) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.visibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
 	}
 	
 	public void waitForElementPresence(WebDriver driver, String locator) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(locator)));
 	}
 	
 	public void waitForElementPresence(WebDriver driver, String locator, String... values) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(castRestParamater(locator, values))));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.presenceOfElementLocated(getByLocator(castRestParamater(locator, values))));
 	} 
 	
 	public boolean waitForElementInvisible(WebDriver driver, String locator) {
-		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
+		return new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(locator)));
 	}
 	
 	public boolean waitForElementInvisible(WebDriver driver, String locator, String... values) {
-		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
+		return new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.invisibilityOfElementLocated(getByLocator(castRestParamater(locator, values))));
 	}
 	
 	public void waitForElementClickable(WebDriver driver, String locator) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(locator)));
 	}
 	
 	public void waitForElementClickable(WebDriver driver, WebElement element) { 
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(element));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(element));
 	}
  	
 	public void waitForElementClickable(WebDriver driver, String locator, String... values) {
-		new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParamater(locator, values))));
+		new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.elementToBeClickable(getByLocator(castRestParamater(locator, values))));
 	}
 	
 	public Alert waitForAlertPresence(WebDriver driver) {
-		return new WebDriverWait(driver, GlobalContants.LONG_TIMEOUT).until(ExpectedConditions.alertIsPresent());
+		return new WebDriverWait(driver, GlobalConstants.LONG_TIMEOUT).until(ExpectedConditions.alertIsPresent());
 	}
 	
-	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
-			String uploadFilePath = GlobalContants.UPLOAD_PATH;
-			
-			String fullFileName ="";
-			
-			for (String file : fileNames) {
-				fullFileName = fullFileName + uploadFilePath + file + "\n";
-			}
-			
-			fullFileName = fullFileName.trim();
-			getElement(driver, HomePageUI.ADD_FILE_BUTTON).sendKeys(fullFileName);
+	public Set<Cookie> getAllCookies(WebDriver driver){
+		return driver.manage().getCookies();
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
 		}
+	}
+	
 	
 	public By getByLocator(String locator) {
 		By by;
@@ -378,6 +377,18 @@ public class BasePage {
 	}
 	return by;
 }
+	
+	public void uploadMultipleFile(WebDriver driver, String... fileNames) {
+		String uploadFilePath = GlobalConstants.UPLOAD_PATH;
+		
+		String fullFileName = "";
+		
+		for (String file : fileNames) {
+			fullFileName = fullFileName + uploadFilePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim();
+		getElement(driver, HomePageUI.ADD_FILE_BUTTON).sendKeys(fullFileName);
+	}
 	
 	public String castRestParamater(String locator, String... dynamicLocator) {
 		locator = String.format(locator, (Object[]) dynamicLocator);

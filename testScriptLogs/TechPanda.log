@@ -1,0 +1,609 @@
+[INFO ] [2022-07-10 22:19:04,989] Step 1 - click on My Account Link
+[INFO ] [2022-07-10 22:19:06,213] Step 2 - input empty to Email Textbox
+[INFO ] [2022-07-10 22:19:06,280] Step 3 - input empty to Password Textbox
+[INFO ] [2022-07-10 22:19:06,338] Step 4 - click on Login button
+[INFO ] [2022-07-10 22:19:06,589] Step 5 - Verify Error message at email textbox when empty
+[INFO ] [2022-07-10 22:19:06,636] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:06,636] Step 6 - Verify Error message at password textbox when empty
+[INFO ] [2022-07-10 22:19:06,665] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:06,676] Step 1 - click on My Account Link
+[INFO ] [2022-07-10 22:19:07,830] Step 2 - input invalid email to email textbox
+[INFO ] [2022-07-10 22:19:07,883] Step 3 - input valid password to password textbox
+[INFO ] [2022-07-10 22:19:07,957] Step 4 - click on Login button
+[INFO ] [2022-07-10 22:19:08,207] Step 5 - Verify error message when inputting invalid email
+[INFO ] [2022-07-10 22:19:08,242] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:08,247] Step 1 - click on My Account Link
+[INFO ] [2022-07-10 22:19:09,314] Step 2 - input valid mail to email textbox
+[INFO ] [2022-07-10 22:19:09,389] Step 3 - input less-than-6-character password into password textbox
+[INFO ] [2022-07-10 22:19:09,466] Step 4 - click on Login button
+[INFO ] [2022-07-10 22:19:09,701] Step 5 - Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-10 22:19:09,735] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:09,739] Step 1 - click on My Account Link
+[INFO ] [2022-07-10 22:19:10,915] Step 2 - click on Create new account button
+[INFO ] [2022-07-10 22:19:11,739] Step 3 - input to First name textbox withLe
+[INFO ] [2022-07-10 22:19:11,784] Step 4 - input to Last name textbox withPhat
+[INFO ] [2022-07-10 22:19:11,879] Step 5 - input to Email adress textbox withthanhphat665655@gmail.com
+[INFO ] [2022-07-10 22:19:11,906] Step 6 - input to password textbox
+[INFO ] [2022-07-10 22:19:11,941] Step 7 - input to confirm password textbox
+[INFO ] [2022-07-10 22:19:11,974] Step 8 - click on Register button
+[INFO ] [2022-07-10 22:19:13,482] Step 9 - Verify success message when register successfully
+[INFO ] [2022-07-10 22:19:13,514] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:13,514] Step 10 - Verify Dashboard title
+[INFO ] [2022-07-10 22:19:13,525] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:13,526] Step 11 - Verify Welcome message
+[INFO ] [2022-07-10 22:19:13,533] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:13,533] Step 12 - Click on Acount button
+[INFO ] [2022-07-10 22:19:13,748] Step 13 - Click on Logout button
+[INFO ] [2022-07-10 22:19:14,853] Step 13 - Verify Homepage image
+[INFO ] [2022-07-10 22:19:20,439] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:23,229] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:26,090] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:31,428] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:31,443] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:31,473] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:31,489] --------------Passed---------------
+[INFO ] [2022-07-10 22:19:39,147] --------------Passed---------------
+[INFO ] [2022-07-11 21:52:52,191] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:52:53,591] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-11 21:52:53,655] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-11 21:52:53,707] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:52:53,942] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-11 21:52:53,992] --------------Passed---------------
+[INFO ] [2022-07-11 21:52:53,992] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-11 21:52:54,051] --------------Passed---------------
+[INFO ] [2022-07-11 21:52:54,060] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:52:55,168] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-11 21:52:55,222] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-11 21:52:55,277] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:52:55,519] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-11 21:52:55,563] --------------Passed---------------
+[INFO ] [2022-07-11 21:52:55,568] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:52:56,679] Login - Step 2: Input valid mail to email textbox
+[INFO ] [2022-07-11 21:52:56,729] Login - Step 3: Input less-than-6-character password into password textbox
+[INFO ] [2022-07-11 21:52:56,803] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:52:57,043] Login - Step 5: Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-11 21:52:57,079] --------------Passed---------------
+[INFO ] [2022-07-11 21:52:57,084] Create New Account - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:52:58,401] Create New Account - Step 2: Click on Create new account button
+[INFO ] [2022-07-11 21:52:59,221] Create New Account - Step 3: Input to First name textbox withLe
+[INFO ] [2022-07-11 21:52:59,257] Create New Account - Step 4: Input to Last name textbox withPhat
+[INFO ] [2022-07-11 21:52:59,297] Create New Account - Step 5: Input to Email adress textbox withthanhphat687263@gmail.com
+[INFO ] [2022-07-11 21:52:59,318] Create New Account - Step 6: Input to password textbox
+[INFO ] [2022-07-11 21:52:59,343] Create New Account - Step 7: Input to confirm password textbox
+[INFO ] [2022-07-11 21:52:59,383] Create New Account - Step 8: Click on Register button
+[INFO ] [2022-07-11 21:53:01,196] Create New Account - Step 9: Verify success message when register successfully
+[INFO ] [2022-07-11 21:53:01,238] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:01,238] Create New Account - Step 10: Verify Dashboard title
+[INFO ] [2022-07-11 21:53:01,253] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:01,253] Create New Account - Step 11: Verify Welcome message
+[INFO ] [2022-07-11 21:53:01,262] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:01,271] Create New Account - Step 12: Click on Acount button on the header
+[INFO ] [2022-07-11 21:53:01,514] Create New Account - Step 13: Click on Logout button
+[INFO ] [2022-07-11 21:53:02,658] Create New Account - Step 14: Verify Homepage image
+[INFO ] [2022-07-11 21:53:08,491] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:08,495] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:53:10,065] Login - Step 2: Input incorrect email into email textbox
+[INFO ] [2022-07-11 21:53:10,126] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 21:53:10,167] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:53:11,900] Login - Step 5: Verify error message when inputting incorrect email
+[INFO ] [2022-07-11 21:53:11,947] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:11,953] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:53:13,298] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 21:53:13,366] Login - Step 3: Input incorrect password into password textbox
+[INFO ] [2022-07-11 21:53:13,398] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:53:13,624] Login - Step 5: Verify error message when inputting incorrect password
+[INFO ] [2022-07-11 21:53:43,720] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:53:45,249] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 21:53:45,300] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 21:53:45,347] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:53:49,856] Login - Step 5: Verify Dashboard title
+[INFO ] [2022-07-11 21:53:49,868] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:49,869] Login - Step 6: Verify Welcome message
+[INFO ] [2022-07-11 21:53:49,881] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:49,881] Login - Step 7: Verify Contact information
+[INFO ] [2022-07-11 21:53:49,892] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:49,901] --------------Passed---------------
+[INFO ] [2022-07-11 21:53:49,901] Login - Step 8: Click on Acount button on the header
+[INFO ] [2022-07-11 21:53:50,127] Login - Step 9: Click on Logout button
+[INFO ] [2022-07-11 21:53:51,428] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:53:52,564] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 21:53:52,605] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 21:53:52,649] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:53:53,899] Dashboard - Step 1: Click on Account Information
+[INFO ] [2022-07-11 21:53:54,842] Account information - Step 1: Edit first name
+[INFO ] [2022-07-11 21:53:54,881] Account information - Step 2: Edit last name
+[INFO ] [2022-07-11 21:53:54,907] Account information - Step 3: Input current password
+[INFO ] [2022-07-11 21:53:54,964] Account information - Step 4: Click on Save button
+[INFO ] [2022-07-11 21:53:56,355] Account information - Step 5: Verify success message
+[INFO ] [2022-07-11 21:53:56,368] --------------Passed---------------
+[INFO ] [2022-07-11 21:56:54,301] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:56:55,637] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-11 21:56:55,704] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-11 21:56:55,773] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:56:56,040] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-11 21:56:56,128] --------------Passed---------------
+[INFO ] [2022-07-11 21:56:56,128] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-11 21:56:56,259] --------------Passed---------------
+[INFO ] [2022-07-11 21:56:56,277] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:56:57,527] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-11 21:56:57,578] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-11 21:56:57,663] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:56:57,907] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-11 21:56:57,947] --------------Passed---------------
+[INFO ] [2022-07-11 21:56:57,952] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:56:59,124] Login - Step 2: Input valid mail to email textbox
+[INFO ] [2022-07-11 21:56:59,198] Login - Step 3: Input less-than-6-character password into password textbox
+[INFO ] [2022-07-11 21:56:59,247] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 21:56:59,969] Login - Step 5: Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-11 21:57:00,005] --------------Passed---------------
+[INFO ] [2022-07-11 21:57:00,011] Create New Account - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:57:01,396] Create New Account - Step 2: Click on Create new account button
+[INFO ] [2022-07-11 21:57:02,695] Create New Account - Step 3: Input to First name textbox withLe
+[INFO ] [2022-07-11 21:57:02,729] Create New Account - Step 4: Input to Last name textbox withPhat
+[INFO ] [2022-07-11 21:57:02,790] Create New Account - Step 5: Input to Email adress textbox withthanhphat803394@gmail.com
+[INFO ] [2022-07-11 21:57:02,814] Create New Account - Step 6: Input to password textbox
+[INFO ] [2022-07-11 21:57:02,836] Create New Account - Step 7: Input to confirm password textbox
+[INFO ] [2022-07-11 21:57:02,859] Create New Account - Step 8: Click on Register button
+[INFO ] [2022-07-11 21:57:04,558] Create New Account - Step 9: Verify success message when register successfully
+[INFO ] [2022-07-11 21:57:04,599] --------------Passed---------------
+[INFO ] [2022-07-11 21:57:04,599] Create New Account - Step 10: Verify Dashboard title
+[INFO ] [2022-07-11 21:57:04,612] --------------Passed---------------
+[INFO ] [2022-07-11 21:57:04,612] Create New Account - Step 11: Verify Welcome message
+[INFO ] [2022-07-11 21:57:04,621] --------------Passed---------------
+[INFO ] [2022-07-11 21:57:04,621] Create New Account - Step 12: Click on Acount button on the header
+[INFO ] [2022-07-11 21:57:05,340] Create New Account - Step 13: Click on Logout button
+[INFO ] [2022-07-11 21:57:11,093] Create New Account - Step 14: Verify Homepage image
+[INFO ] [2022-07-11 21:57:12,015] --------------Passed---------------
+[INFO ] [2022-07-11 21:57:12,027] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 21:59:51,177] Login - Step 2: Input incorrect email into email textbox
+[INFO ] [2022-07-11 22:00:21,309] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:00:51,618] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:01:21,828] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:13:46,298] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:13:47,732] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-11 22:13:47,788] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-11 22:13:47,829] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:13:48,551] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-11 22:13:48,611] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:48,611] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-11 22:13:48,649] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:48,658] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:13:50,065] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-11 22:13:50,117] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-11 22:13:50,189] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:13:50,918] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-11 22:13:50,953] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:50,959] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:13:52,392] Login - Step 2: Input valid mail to email textbox
+[INFO ] [2022-07-11 22:13:52,472] Login - Step 3: Input less-than-6-character password into password textbox
+[INFO ] [2022-07-11 22:13:52,549] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:13:53,274] Login - Step 5: Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-11 22:13:53,307] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:53,314] Create New Account - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:13:54,843] Create New Account - Step 2: Click on Create new account button
+[INFO ] [2022-07-11 22:13:55,964] Create New Account - Step 3: Input to First name textbox withLe
+[INFO ] [2022-07-11 22:13:56,005] Create New Account - Step 4: Input to Last name textbox withPhat
+[INFO ] [2022-07-11 22:13:56,043] Create New Account - Step 5: Input to Email adress textbox withthanhphat848201@gmail.com
+[INFO ] [2022-07-11 22:13:56,085] Create New Account - Step 6: Input to password textbox
+[INFO ] [2022-07-11 22:13:56,117] Create New Account - Step 7: Input to confirm password textbox
+[INFO ] [2022-07-11 22:13:56,137] Create New Account - Step 8: Click on Register button
+[INFO ] [2022-07-11 22:13:57,772] Create New Account - Step 9: Verify success message when register successfully
+[INFO ] [2022-07-11 22:13:57,803] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:57,803] Create New Account - Step 10: Verify Dashboard title
+[INFO ] [2022-07-11 22:13:57,811] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:57,812] Create New Account - Step 11: Verify Welcome message
+[INFO ] [2022-07-11 22:13:57,820] --------------Passed---------------
+[INFO ] [2022-07-11 22:13:57,821] Create New Account - Step 12: Click on Acount button on the header
+[INFO ] [2022-07-11 22:13:58,538] Create New Account - Step 13: Click on Logout button
+[INFO ] [2022-07-11 22:13:59,965] Create New Account - Step 14: Verify Homepage image
+[INFO ] [2022-07-11 22:14:05,692] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:05,695] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:14:07,095] Login - Step 2: Input incorrect email into email textbox
+[INFO ] [2022-07-11 22:14:07,152] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:14:07,241] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:14:08,950] Login - Step 5: Verify error message when inputting incorrect email
+[INFO ] [2022-07-11 22:14:08,982] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:08,984] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:14:10,671] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:14:10,715] Login - Step 3: Input incorrect password into password textbox
+[INFO ] [2022-07-11 22:14:10,764] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:14:12,555] Login - Step 5: Verify error message when inputting incorrect password
+[INFO ] [2022-07-11 22:14:12,588] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:12,591] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:14:14,089] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:14:14,137] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:14:14,231] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:14:18,486] Login - Step 5: Verify Dashboard title
+[INFO ] [2022-07-11 22:14:18,504] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:18,505] Login - Step 6: Verify Welcome message
+[INFO ] [2022-07-11 22:14:18,515] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:18,516] Login - Step 7: Verify Contact information
+[INFO ] [2022-07-11 22:14:18,526] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:18,535] --------------Passed---------------
+[INFO ] [2022-07-11 22:14:18,535] Login - Step 8: Click on Acount button on the header
+[INFO ] [2022-07-11 22:14:19,252] Login - Step 9: Click on Logout button
+[INFO ] [2022-07-11 22:14:20,632] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:14:22,053] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:14:22,091] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:14:22,128] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:14:23,627] Dashboard - Step 1: Click on Account Information
+[INFO ] [2022-07-11 22:14:24,493] Account information - Step 1: Edit first name
+[INFO ] [2022-07-11 22:14:24,554] Account information - Step 2: Edit last name
+[INFO ] [2022-07-11 22:14:24,596] Account information - Step 3: Input current password
+[INFO ] [2022-07-11 22:14:24,635] Account information - Step 4: Click on Save button
+[INFO ] [2022-07-11 22:14:25,869] Account information - Step 5: Verify success message
+[INFO ] [2022-07-11 22:14:25,884] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:17,204] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:18,530] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-11 22:15:18,601] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-11 22:15:18,648] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:18,896] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-11 22:15:19,067] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:19,068] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-11 22:15:19,169] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:19,185] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:20,447] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-11 22:15:20,497] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-11 22:15:20,566] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:21,289] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-11 22:15:21,331] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:21,334] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:22,723] Login - Step 2: Input valid mail to email textbox
+[INFO ] [2022-07-11 22:15:22,806] Login - Step 3: Input less-than-6-character password into password textbox
+[INFO ] [2022-07-11 22:15:22,867] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:23,591] Login - Step 5: Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-11 22:15:23,634] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:23,642] Create New Account - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:25,027] Create New Account - Step 2: Click on Create new account button
+[INFO ] [2022-07-11 22:15:26,095] Create New Account - Step 3: Input to First name textbox withLe
+[INFO ] [2022-07-11 22:15:26,135] Create New Account - Step 4: Input to Last name textbox withPhat
+[INFO ] [2022-07-11 22:15:26,217] Create New Account - Step 5: Input to Email adress textbox withthanhphat129499@gmail.com
+[INFO ] [2022-07-11 22:15:26,244] Create New Account - Step 6: Input to password textbox
+[INFO ] [2022-07-11 22:15:26,265] Create New Account - Step 7: Input to confirm password textbox
+[INFO ] [2022-07-11 22:15:26,290] Create New Account - Step 8: Click on Register button
+[INFO ] [2022-07-11 22:15:27,899] Create New Account - Step 9: Verify success message when register successfully
+[INFO ] [2022-07-11 22:15:27,928] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:27,928] Create New Account - Step 10: Verify Dashboard title
+[INFO ] [2022-07-11 22:15:27,941] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:27,941] Create New Account - Step 11: Verify Welcome message
+[INFO ] [2022-07-11 22:15:27,949] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:27,950] Create New Account - Step 12: Click on Acount button on the header
+[INFO ] [2022-07-11 22:15:28,672] Create New Account - Step 13: Click on Logout button
+[INFO ] [2022-07-11 22:15:30,219] Create New Account - Step 14: Verify Homepage image
+[INFO ] [2022-07-11 22:15:35,521] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:35,528] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:36,808] Login - Step 2: Input incorrect email into email textbox
+[INFO ] [2022-07-11 22:15:36,859] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:15:36,968] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:38,730] Login - Step 5: Verify error message when inputting incorrect email
+[INFO ] [2022-07-11 22:15:38,769] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:38,774] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:40,160] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:15:40,203] Login - Step 3: Input incorrect password into password textbox
+[INFO ] [2022-07-11 22:15:40,237] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:42,078] Login - Step 5: Verify error message when inputting incorrect password
+[INFO ] [2022-07-11 22:15:42,112] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:42,118] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:43,875] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:15:43,914] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:15:43,974] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:48,422] Login - Step 5: Verify Dashboard title
+[INFO ] [2022-07-11 22:15:48,441] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:48,441] Login - Step 6: Verify Welcome message
+[INFO ] [2022-07-11 22:15:48,452] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:48,453] Login - Step 7: Verify Contact information
+[INFO ] [2022-07-11 22:15:48,467] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:48,479] --------------Passed---------------
+[INFO ] [2022-07-11 22:15:48,479] Login - Step 8: Click on Acount button on the header
+[INFO ] [2022-07-11 22:15:49,202] Login - Step 9: Click on Logout button
+[INFO ] [2022-07-11 22:15:50,594] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:15:51,982] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:15:52,023] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:15:52,106] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:15:53,596] Dashboard - Step 1: Click on Account Information
+[INFO ] [2022-07-11 22:15:54,727] Account information - Step 1: Edit first name
+[INFO ] [2022-07-11 22:15:54,770] Account information - Step 2: Edit last name
+[INFO ] [2022-07-11 22:15:54,793] Account information - Step 3: Input current password
+[INFO ] [2022-07-11 22:15:54,847] Account information - Step 4: Click on Save button
+[INFO ] [2022-07-11 22:15:56,303] Account information - Step 5: Verify success message
+[INFO ] [2022-07-11 22:15:56,316] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:03,183] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:04,383] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-11 22:16:04,421] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-11 22:16:04,458] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:04,686] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-11 22:16:04,723] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:04,723] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-11 22:16:04,757] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:04,760] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:05,949] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-11 22:16:06,019] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-11 22:16:06,110] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:06,372] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-11 22:16:06,552] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:06,554] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:07,922] Login - Step 2: Input valid mail to email textbox
+[INFO ] [2022-07-11 22:16:08,013] Login - Step 3: Input less-than-6-character password into password textbox
+[INFO ] [2022-07-11 22:16:08,115] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:08,349] Login - Step 5: Verify error message when inputting less-than-6-character password
+[INFO ] [2022-07-11 22:16:08,385] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:08,388] Create New Account - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:09,504] Create New Account - Step 2: Click on Create new account button
+[INFO ] [2022-07-11 22:16:10,541] Create New Account - Step 3: Input to First name textbox withLe
+[INFO ] [2022-07-11 22:16:10,594] Create New Account - Step 4: Input to Last name textbox withPhat
+[INFO ] [2022-07-11 22:16:10,635] Create New Account - Step 5: Input to Email adress textbox withthanhphat977957@gmail.com
+[INFO ] [2022-07-11 22:16:10,701] Create New Account - Step 6: Input to password textbox
+[INFO ] [2022-07-11 22:16:10,741] Create New Account - Step 7: Input to confirm password textbox
+[INFO ] [2022-07-11 22:16:10,774] Create New Account - Step 8: Click on Register button
+[INFO ] [2022-07-11 22:16:12,419] Create New Account - Step 9: Verify success message when register successfully
+[INFO ] [2022-07-11 22:16:12,458] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:12,458] Create New Account - Step 10: Verify Dashboard title
+[INFO ] [2022-07-11 22:16:12,469] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:12,469] Create New Account - Step 11: Verify Welcome message
+[INFO ] [2022-07-11 22:16:12,477] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:12,477] Create New Account - Step 12: Click on Acount button on the header
+[INFO ] [2022-07-11 22:16:12,697] Create New Account - Step 13: Click on Logout button
+[INFO ] [2022-07-11 22:16:14,080] Create New Account - Step 14: Verify Homepage image
+[INFO ] [2022-07-11 22:16:19,387] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:19,393] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:20,589] Login - Step 2: Input incorrect email into email textbox
+[INFO ] [2022-07-11 22:16:20,634] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:16:20,689] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:22,197] Login - Step 5: Verify error message when inputting incorrect email
+[INFO ] [2022-07-11 22:16:22,263] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:22,274] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:23,701] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:16:23,754] Login - Step 3: Input incorrect password into password textbox
+[INFO ] [2022-07-11 22:16:23,832] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:25,494] Login - Step 5: Verify error message when inputting incorrect password
+[INFO ] [2022-07-11 22:16:25,545] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:25,546] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:27,151] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:16:27,204] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:16:27,291] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:31,578] Login - Step 5: Verify Dashboard title
+[INFO ] [2022-07-11 22:16:31,614] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:31,614] Login - Step 6: Verify Welcome message
+[INFO ] [2022-07-11 22:16:31,629] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:31,630] Login - Step 7: Verify Contact information
+[INFO ] [2022-07-11 22:16:31,641] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:31,651] --------------Passed---------------
+[INFO ] [2022-07-11 22:16:31,651] Login - Step 8: Click on Acount button on the header
+[INFO ] [2022-07-11 22:16:31,873] Login - Step 9: Click on Logout button
+[INFO ] [2022-07-11 22:16:33,398] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-11 22:16:34,887] Login - Step 2: Input correct email into email textbox
+[INFO ] [2022-07-11 22:16:34,931] Login - Step 3: Input correct password into password textbox
+[INFO ] [2022-07-11 22:16:34,982] Login - Step 4: Click on Login button
+[INFO ] [2022-07-11 22:16:36,429] Dashboard - Step 1: Click on Account Information
+[INFO ] [2022-07-11 22:16:37,409] Account information - Step 1: Edit first name
+[INFO ] [2022-07-11 22:16:37,446] Account information - Step 2: Edit last name
+[INFO ] [2022-07-11 22:16:37,468] Account information - Step 3: Input current password
+[INFO ] [2022-07-11 22:16:37,485] Account information - Step 4: Click on Save button
+[INFO ] [2022-07-11 22:16:38,814] Account information - Step 5: Verify success message
+[INFO ] [2022-07-11 22:16:38,835] --------------Passed---------------
+[INFO ] [2022-07-12 22:34:17,103] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:34:18,601] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:34:18,672] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:34:18,726] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:34:18,974] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:34:19,061] --------------Passed---------------
+[INFO ] [2022-07-12 22:34:19,062] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:34:19,199] --------------Failed---------------
+[INFO ] [2022-07-12 22:34:19,206] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:34:20,570] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:34:20,622] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:34:20,668] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:34:20,906] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:34:20,938] --------------Failed---------------
+[INFO ] [2022-07-12 22:35:09,056] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:35:10,828] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:35:11,064] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:35:11,118] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:35:11,366] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:35:11,415] --------------Passed---------------
+[INFO ] [2022-07-12 22:35:11,415] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:35:11,454] --------------Failed---------------
+[INFO ] [2022-07-12 22:35:11,464] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:35:12,790] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:35:12,848] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:35:12,905] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:35:13,169] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:35:13,204] --------------Failed---------------
+[INFO ] [2022-07-12 22:37:16,729] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:37:18,382] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:37:18,516] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:37:18,739] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:37:19,032] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:37:19,082] --------------Failed---------------
+[INFO ] [2022-07-12 22:37:19,082] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:37:19,123] --------------Failed---------------
+[INFO ] [2022-07-12 22:37:19,132] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:37:20,994] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:37:21,050] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:37:21,099] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:37:21,353] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:37:21,388] --------------Failed---------------
+[INFO ] [2022-07-12 22:38:27,582] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:38:29,338] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:38:29,400] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:38:29,504] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:38:30,105] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:38:30,158] --------------Failed---------------
+[INFO ] [2022-07-12 22:38:30,158] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:38:30,201] --------------Failed---------------
+[INFO ] [2022-07-12 22:38:30,209] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:38:32,019] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:38:32,076] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:38:32,126] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:38:32,400] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:38:32,443] --------------Failed---------------
+[INFO ] [2022-07-12 22:47:16,769] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:47:18,331] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:47:18,390] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:47:18,450] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:47:18,699] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:47:18,749] --------------Failed---------------
+[INFO ] [2022-07-12 22:47:18,749] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:47:18,798] --------------Failed---------------
+[INFO ] [2022-07-12 22:47:18,805] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:47:20,336] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:47:20,421] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:47:20,485] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:47:20,722] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:47:20,764] --------------Failed---------------
+[INFO ] [2022-07-12 22:51:54,397] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:51:56,026] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:51:56,192] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:51:56,393] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:51:56,639] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:51:56,685] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:51:56,723] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:51:58,021] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:51:58,086] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:51:58,144] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:51:58,381] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:57:17,339] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:57:18,697] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 22:57:18,767] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 22:57:18,817] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:57:19,071] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 22:57:19,206] --------------Failed---------------
+[INFO ] [2022-07-12 22:57:19,206] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 22:57:19,334] --------------Failed---------------
+[INFO ] [2022-07-12 22:57:19,351] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 22:57:21,101] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 22:57:21,163] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 22:57:21,232] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 22:57:21,475] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 22:57:21,510] --------------Failed---------------
+[INFO ] [2022-07-12 22:59:57,143] --------------Failed---------------
+[INFO ] [2022-07-12 22:59:57,177] --------------Passed---------------
+[INFO ] [2022-07-12 22:59:59,453] --------------Failed---------------
+[INFO ] [2022-07-12 23:00:01,858] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:06,838] --------------Failed---------------
+[INFO ] [2022-07-12 23:00:06,852] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:06,860] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:14,339] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:17,825] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:21,526] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:28,194] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:28,212] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:28,226] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:28,237] --------------Passed---------------
+[INFO ] [2022-07-12 23:00:35,988] --------------Passed---------------
+[INFO ] [2022-07-12 23:05:53,740] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:05:55,472] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 23:05:55,531] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 23:05:55,590] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:05:55,832] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 23:05:55,882]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:05:55,884] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 23:05:55,925]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:05:56,151] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:05:57,413] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 23:05:57,483] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 23:05:57,530] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:05:57,765] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 23:05:57,797]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:09:52,755] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:09:54,018] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 23:09:54,083] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 23:09:54,147] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:09:54,401] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 23:09:54,487]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:09:54,488] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 23:09:54,596]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:09:54,872] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:09:56,282] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 23:09:56,338] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 23:09:56,384] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:09:56,621] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 23:09:56,679]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:12:14,842] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:12:16,314] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 23:12:16,411] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 23:12:16,512] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:12:17,322] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 23:12:18,430]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:12:18,430] Login - Step 6: Verify Error message at password textbox when empty
+[INFO ] [2022-07-12 23:12:19,565]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:12:19,574] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:12:21,334] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 23:12:21,391] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 23:12:21,432] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:12:22,160] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 23:12:22,188]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-07-12 23:20:38,106] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:20:39,282] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 23:20:39,342] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 23:20:39,392] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:20:39,623] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 23:20:39,884] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:20:41,148] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 23:20:41,200] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 23:20:41,248] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:20:41,516] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-12 23:39:53,220] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:39:54,482] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-12 23:39:54,560] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-12 23:39:54,612] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:39:54,866] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-12 23:39:54,969] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-12 23:39:56,234] Login - Step 2: Input invalid email to email textbox
+[INFO ] [2022-07-12 23:39:56,285] Login - Step 3: Input valid password to password textbox
+[INFO ] [2022-07-12 23:39:56,346] Login - Step 4: Click on Login button
+[INFO ] [2022-07-12 23:39:56,580] Login - Step 5: Verify error message when inputting invalid email
+[INFO ] [2022-07-13 00:05:16,985] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-13 00:05:18,411] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-13 00:05:18,474] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-13 00:05:18,540] Login - Step 4: Click on Login button
+[INFO ] [2022-07-13 00:05:18,785] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-13 00:07:36,463] Login - Step 1: Click on My Account Link
+[INFO ] [2022-07-13 00:07:37,675] Login - Step 2: Input empty to Email Textbox
+[INFO ] [2022-07-13 00:07:37,777] Login - Step 3: Input empty to Password Textbox
+[INFO ] [2022-07-13 00:07:37,880] Login - Step 4: Click on Login button
+[INFO ] [2022-07-13 00:07:38,144] Login - Step 5: Verify Error message at email textbox when empty
+[INFO ] [2022-07-19 23:11:06,047] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-19 23:11:07,218] Pre-condition - Step 2: Input to Email textbox
+[INFO ] [2022-07-19 23:11:07,273] Pre-condition - Step 3: Input to Password textbox
+[INFO ] [2022-07-19 23:11:07,321] Pre-condition - Step 4: Click to Login button
+[INFO ] [2022-07-19 23:11:08,756] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-19 23:11:09,711] Edit account Information - Step 2: Edit first name textbox
+[INFO ] [2022-07-19 23:11:09,780] Edit account Information - Step 3: Edit last name textbox
+[INFO ] [2022-07-19 23:11:09,813] Edit account Information - Step 4: Input into current password textbox
+[INFO ] [2022-07-19 23:11:09,843] Edit account Information - Step 5: Click on save button
+[INFO ] [2022-07-19 23:11:11,110] Edit account Information - Step 6: Verify Success message
+[INFO ] [2022-07-19 23:11:11,129]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-07-19 23:56:07,904] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-19 23:56:09,047] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-19 23:56:36,139] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-19 23:59:28,466] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-19 23:59:30,913] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-19 23:59:39,971] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:04:38,570] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-20 00:04:39,709] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-20 00:04:48,767] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:09:19,812] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-20 00:09:21,071] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-20 00:09:21,339] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:11:49,984] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-20 00:11:51,149] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-20 00:11:55,712] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:11:56,532] Edit account Information - Step 2: Edit first name textbox
+[INFO ] [2022-07-20 00:11:56,590] Edit account Information - Step 3: Edit last name textbox
+[INFO ] [2022-07-20 00:11:56,616] Edit account Information - Step 4: Input into current password textbox
+[INFO ] [2022-07-20 00:11:56,644] Edit account Information - Step 5: Click on save button
+[INFO ] [2022-07-20 00:11:57,888] Edit account Information - Step 6: Verify Success message
+[INFO ] [2022-07-20 00:11:57,911]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-07-20 00:12:55,886] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-20 00:12:57,437] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-20 00:13:01,990] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:14:01,924] Pre-condition - Step 1: Click on My Account Link
+[INFO ] [2022-07-20 00:14:03,173] Pre-condition - Step 2: Login by Cookie
+[INFO ] [2022-07-20 00:14:07,363] Edit account Information - Step 1: Open Account information page
+[INFO ] [2022-07-20 00:14:08,313] Edit account Information - Step 2: Edit first name textbox
+[INFO ] [2022-07-20 00:14:08,366] Edit account Information - Step 3: Edit last name textbox
+[INFO ] [2022-07-20 00:14:08,395] Edit account Information - Step 4: Input into current password textbox
+[INFO ] [2022-07-20 00:14:08,419] Edit account Information - Step 5: Click on save button
+[INFO ] [2022-07-20 00:14:09,563] Edit account Information - Step 6: Verify Success message
+[INFO ] [2022-07-20 00:14:09,585]  -------------------------- PASSED -------------------------- 
